@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>new (Harvester)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File harvester.rb, line 29</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">set_url</span>, <span class="ruby-identifier">options</span> = {})
+                <span class="ruby-comment cmt"># Set the OAI base url and params</span>
+                <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">url</span> = <span class="ruby-identifier">set_url</span>
+                <span class="ruby-comment cmt"># Use the resumption token from the options</span>
+                <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">resumption_token</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:resumption_token</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:resumption_token</span>]
+                <span class="ruby-comment cmt"># Use from date from the options</span>
+                <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">from_date</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:from_date</span>] <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:from_date</span>]
+
+                <span class="ruby-comment cmt"># Create file for resumption token, unless it already exists</span>
+                <span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">touch</span> <span class="ruby-value str">&quot;resumption_token&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-value str">&quot;resumption_token&quot;</span>)
+                <span class="ruby-comment cmt"># Create a log file to keep track of the resumption tokens</span>
+                <span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">touch</span> <span class="ruby-value str">&quot;resumption_tokens.log&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-value str">&quot;resumption_tokens.log&quot;</span>)
+                <span class="ruby-comment cmt"># Create a file which stores the date of this harvest</span>
+                <span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">touch</span> <span class="ruby-value str">&quot;latest_harvest&quot;</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-value str">&quot;latest_harvest&quot;</span>)
+
+                <span class="ruby-comment cmt"># If no resumption token was given in the options use the resumption token from the file</span>
+                <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">resumption_token</span>.<span class="ruby-identifier">nil?</span>
+                        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-value str">&quot;resumption_token&quot;</span>, <span class="ruby-value str">&quot;r&quot;</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">resumption_token</span> = <span class="ruby-identifier">f</span>.<span class="ruby-identifier">read</span> }
+                        <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">resumption_token</span>.<span class="ruby-identifier">chomp!</span>
+                        <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">resumption_token</span> = <span class="ruby-value str">&quot;start&quot;</span> <span class="ruby-keyword kw">if</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">resumption_token</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;&quot;</span>
+                <span class="ruby-keyword kw">end</span>
+
+                <span class="ruby-comment cmt"># If no from date was given, use the from date from the file (blank is allowed)</span>
+                <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">from_date</span>.<span class="ruby-identifier">nil?</span>
+                          <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-value str">&quot;latest_harvest&quot;</span>, <span class="ruby-value str">&quot;r&quot;</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">from_date</span> = <span class="ruby-identifier">f</span>.<span class="ruby-identifier">read</span> }
+                          <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">from_date</span>.<span class="ruby-identifier">chomp!</span>
+                          <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-value str">&quot;latest_harvest&quot;</span>, <span class="ruby-value str">&quot;w&quot;</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">write</span> <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-value str">&quot;%Y-%m-%d&quot;</span>) }
+                <span class="ruby-keyword kw">end</span>
+        <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>calculate_match (PersonMatcher)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File person_matcher.rb, line 57</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">calculate_match</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+                <span class="ruby-comment cmt"># Calculate the edit distance for the two name labels</span>
+                <span class="ruby-identifier">label_score</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">lbl_wt</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">edit_distance</span>(<span class="ruby-identifier">a</span>[<span class="ruby-identifier">:lbl</span>], <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:lbl</span>])
+
+                <span class="ruby-comment cmt"># Calculate the difference in years for date of birth, </span>
+                <span class="ruby-comment cmt"># use a penalty only if the edit-distance more than 0</span>
+                <span class="ruby-identifier">year1</span> = <span class="ruby-identifier">compare_years</span>(<span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dob</span>], <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dob</span>], <span class="ruby-operator">!</span>(<span class="ruby-identifier">label_score</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">lbl_wt</span>))
+
+                <span class="ruby-comment cmt"># In some cases date of birth and date of death were swapped:</span>
+                <span class="ruby-comment cmt"># We consider it a match anyway, if:</span>
+                <span class="ruby-comment cmt">#  - year of birth for A is equal to year birth for B</span>
+                <span class="ruby-comment cmt">#  - both values are not nil</span>
+                <span class="ruby-comment cmt">#      - one of the values IS nil</span>
+                <span class="ruby-identifier">year1</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">yr_wt</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dob</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dod</span>] <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dob</span>], <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dob</span>]].<span class="ruby-identifier">include?</span>(<span class="ruby-keyword kw">nil</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span>(<span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dob</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dod</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+                <span class="ruby-comment cmt"># Calculate the difference in years for date of death</span>
+                <span class="ruby-identifier">year2</span> = <span class="ruby-identifier">compare_years</span>(<span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dod</span>], <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dod</span>], <span class="ruby-operator">!</span>(<span class="ruby-identifier">label_score</span> <span class="ruby-operator">==</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">lbl_wt</span>))
+                <span class="ruby-comment cmt"># Reverse case of above example</span>
+                <span class="ruby-identifier">year2</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">yr_wt</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dod</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dob</span>] <span class="ruby-operator">&amp;&amp;</span> [<span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dod</span>], <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dod</span>]].<span class="ruby-identifier">include?</span>(<span class="ruby-keyword kw">nil</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span>(<span class="ruby-identifier">a</span>[<span class="ruby-identifier">:dod</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">b</span>[<span class="ruby-identifier">:dob</span>] <span class="ruby-operator">==</span> <span class="ruby-keyword kw">nil</span>)
+
+                <span class="ruby-comment cmt"># Return the weighted score</span>
+                <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">label_score</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">year1</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">year2</span>
+        <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

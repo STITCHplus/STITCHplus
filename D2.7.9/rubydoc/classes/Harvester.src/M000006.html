@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>deleted_records_from_response (Harvester)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File harvester.rb, line 119</span>
+                <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">deleted_records_from_response</span>
+                        <span class="ruby-identifier">deleted_xml</span> = <span class="ruby-node">`xsltproc xsl/deleted_records.xsl #{infile.path}`</span>
+                        <span class="ruby-identifier">parsed_xml</span> = <span class="ruby-constant">Hpricot</span>.<span class="ruby-constant">XML</span>(<span class="ruby-identifier">deleted_xml</span>)
+                        <span class="ruby-keyword kw">return</span> (<span class="ruby-identifier">parsed_xml</span><span class="ruby-operator">/</span><span class="ruby-value str">'ListRecords/identifier'</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">identifier</span><span class="ruby-operator">|</span> <span class="ruby-identifier">identifier</span>.<span class="ruby-identifier">innerText</span> }
+                <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<OAI-PMH xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/
+         http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openarchives.org/OAI/2.0/">
+	<responseDate>2011-03-10T11:35:25.055Z</responseDate>
+	<request verb="GetRecord" metadataPrefix="dcx">http://serviceso.kb.nl/mdo/oai	</request>
+	<GetRecord>
+		<record>
+			<header>
+				<identifier>GGC-THES:AC:314492364</identifier>
+				<datestamp>2010-07-29</datestamp>
+				<setSpec>GGC-THES</setSpec>
+			</header>
+			<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<skos:Concept rdf:about="http://thesaurus.kb.nl/314492364">
+ <skos:inScheme rdf:resource="http://thesaurus.kb.nl/"></skos:inScheme>
+ <skos:prefLabel>Vries, J. de</skos:prefLabel>
+</skos:Concept>
+   </rdf:RDF>
+			</metadata>
+		</record>
+	</GetRecord>
+</OAI-PMH>

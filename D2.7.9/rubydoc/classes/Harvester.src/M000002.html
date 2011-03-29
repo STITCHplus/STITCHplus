@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>run (Harvester)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File harvester.rb, line 60</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run</span>
+                <span class="ruby-comment cmt"># Run as long as the resumption token is not blank</span>
+                <span class="ruby-keyword kw">while</span>(<span class="ruby-operator">!</span>(<span class="ruby-identifier">resumption_token</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp re">/^\s*$/</span>))
+                        <span class="ruby-comment cmt"># Create a temp file for the OAI response</span>
+                        <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">infile</span> = <span class="ruby-constant">Tempfile</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">resumption_token</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/[\-\!:]/</span>, <span class="ruby-value str">&quot;_&quot;</span>))
+
+                        <span class="ruby-comment cmt"># Write the OAI response to temp file</span>
+                        <span class="ruby-identifier">infile</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">resumption_token</span> <span class="ruby-operator">==</span> <span class="ruby-value str">&quot;start&quot;</span> <span class="ruby-operator">?</span>
+                                <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">get_response</span>(<span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-node">&quot;#{url}#{from_date == &quot;&quot; ? &quot;&quot; : &quot;&amp;from=#{from_date}&quot;}&quot;</span>)).<span class="ruby-identifier">body</span> <span class="ruby-operator">:</span>
+                                <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">get_response</span>(<span class="ruby-constant">URI</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-node">&quot;#{url}&amp;resumptionToken=#{resumption_token}&quot;</span>)).<span class="ruby-identifier">body</span>
+                        )
+                        <span class="ruby-identifier">infile</span>.<span class="ruby-identifier">flush</span>
+
+                        <span class="ruby-comment cmt"># Parse the OAI response wrapper with  Hpricot</span>
+                        <span class="ruby-identifier">response</span> = <span class="ruby-identifier">get_oai_wrapper</span>
+
+                        <span class="ruby-comment cmt"># If there was a valid response, handle storage of xml, else skip the response, continue with the next</span>
+                        <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">response</span>)
+                                <span class="ruby-comment cmt"># Terminate in case of response error</span>
+                                <span class="ruby-identifier">raise_error</span> <span class="ruby-identifier">response_error_for</span>(<span class="ruby-identifier">response</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">at</span>(<span class="ruby-value str">&quot;/OAI-PMH/error&quot;</span>)
+
+                                <span class="ruby-comment cmt"># Save the resumption token from the response</span>
+                                <span class="ruby-identifier">save_resumption_token</span>(<span class="ruby-identifier">response</span>)
+
+                                <span class="ruby-comment cmt"># Handle response</span>
+                                <span class="ruby-identifier">store_response</span>
+                        <span class="ruby-keyword kw">else</span>
+                                <span class="ruby-identifier">resumption_token_from_faulty_xml</span>
+                        <span class="ruby-keyword kw">end</span>
+                <span class="ruby-keyword kw">end</span>
+        <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -1,0 +1,16 @@
+QUICKSTART START RUBY HARVESTER
+Deze harvester maakt gebruik van de ListRecords methode van OAI. Dit is vooral bruikbaar om snel inzicht in de data te krijgen, maar voor stabiel gebruik en regelmatige updates wordt verwezen naar de java harvester.
+
+Voorwaarden voor gebruik:
+------
+1) Linux native command line app: xsltproc
+1a) # sudo apt-get install xsltproc
+2) De ruby gem 'hpricot'
+ - sudo gem install hpricot
+
+Gebruik:
+-------
+1) unzip ruby_harvester.src.zip in een directory naar keuze
+2) Testdraaien /pad/naar/ruby_harvester/harvest_example.rb
+3) Override de methoden van /pad/naar/ruby_harvester/harvester.rb, zoals in het voorbeeld 'harvest_example.rb'
+

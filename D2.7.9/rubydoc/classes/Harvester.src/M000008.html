@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>get_oai_wrapper (Harvester)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File harvester.rb, line 135</span>
+                <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_oai_wrapper</span>
+                        <span class="ruby-identifier">wrapper_xml</span> = <span class="ruby-node">`xsltproc xsl/get_wrapper.xsl #{infile.path} 2&gt; err/xsl_err.out`</span>
+                        <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">size?</span>(<span class="ruby-value str">&quot;err/xsl_err.out&quot;</span>)
+                                <span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">cp</span>(<span class="ruby-identifier">infile</span>.<span class="ruby-identifier">path</span>, <span class="ruby-node">&quot;xmlfaulty/#{resumption_token.gsub(/[\-\!:]/, &quot;_&quot;)}.xml&quot;</span>)
+                                <span class="ruby-identifier">raise_warning</span> <span class="ruby-node">&quot;Faulty XML encountered at resumption token: #{resumption_token}&quot;</span>
+                                <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span>
+                        <span class="ruby-keyword kw">end</span>
+                        <span class="ruby-constant">Hpricot</span>.<span class="ruby-constant">XML</span>(<span class="ruby-identifier">wrapper_xml</span>)
+                <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

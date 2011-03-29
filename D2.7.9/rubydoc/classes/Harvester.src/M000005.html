@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>store_response (Harvester)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File harvester.rb, line 106</span>
+                <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">store_response</span>                    
+                        <span class="ruby-comment cmt"># Retrieve all the deleted record identifiers from the response, parse with Hpricot</span>
+                        <span class="ruby-identifier">deleted_records</span> = <span class="ruby-identifier">deleted_records_from_response</span>
+                        <span class="ruby-comment cmt"># Retrieve all the records to be created/updated</span>
+                        (<span class="ruby-identifier">record_xml</span>, <span class="ruby-identifier">identifiers</span>) = <span class="ruby-identifier">records_from_response</span>
+
+                        <span class="ruby-comment cmt"># Delete all the deleted records</span>
+                        <span class="ruby-identifier">delete_records</span>(<span class="ruby-identifier">deleted_records</span>)
+                        <span class="ruby-comment cmt"># Create/update the other records</span>
+                        <span class="ruby-identifier">store_records</span>(<span class="ruby-identifier">record_xml</span>, <span class="ruby-identifier">identifiers</span>)
+                <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

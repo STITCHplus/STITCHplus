@@ -1,0 +1,9 @@
+name;KB thesaurus
+owner_id;skos
+url;http://kbresearch.nl/general/thesaurus_harvest/
+set;GGC-THES
+usesResumptionToken;true
+fromDate;2010-06-01
+identifierDateFormat;yyyy-MM-dd
+identifierMetadataPrefix;dcx
+recordMetadataPrefix;dcx

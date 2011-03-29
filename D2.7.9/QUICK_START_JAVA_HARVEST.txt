@@ -1,0 +1,66 @@
+QUICK START JAVA HARVESTER
+De java harvester is een NetBeans project, dus dat is de eenvoudigste manier om inzicht in de broncode te krijgen.
+
+Gebruik:
+-------
+1) unzip java_harvest_conf_example.zip in een directory naar keuze
+2) unzip java_harvester.src.zip in een directory naar keuze
+3) Start het proces voor GetRecords vanuit de project root (/pad/naar/thes/)
+ # java -cp dist/thes.jar harvester.GetRecords /pad/naar/harvest_thes/ skos 100
+4) Start het proces voor HarvestIdendifiers vanuit de project root (/pad/naar/thes/)
+ # java -cp dist/thes.jar harvester.HarvestIdentifiers /pad/naar/harvest_thes/ skos
+
+Toelichting:
+------------
+1) In deze zip staan:
+ - log4j.conf (instellingen voor de logger)
+ - skos/config (configuratie voor de harvester)
+ - skos/GGC-THES-AC-314492364/* (voorbeeld output van een OAI GetRecord)
+1.a) Configuratie bevat:
+ - name (naam van de collectie)
+ - url (de OAI endpoint: http://kbresearch.nl/general/thesaurus_harvest/)
+ - owner_id (naam van de sub directory waarin wordt opgeslagen; in dit geval 'skos')
+ - set (de set die geharvest moet worden: 'GGC-THES')
+ - usesResumptionToken (resumption token wordt ondersteund)
+ - fromDate (datum van de eerste op te halen records: 2010-06-01)
+ - identifierDateFormat (formatting van de datum)
+ - identifierMetadataPrefix (metadata prefix voor ListIdentifiers OAI)
+ - recordMetadataPrefix (metadata prefix voor GetRecord OAI)
+
+2) De broncode van de java harvester. Gebruik is het eenvoudigst via de meegeleverde jar (dist/thes.jar)
+
+3) Het GetRecords proces is bedoeld als latent proces dat altijd draait. 
+ A. Wat het doet:
+  a. Doe niets zo lang het HarvestIdentifiers proces loopt
+  a.1: dit wordt uitgelezen uit tekstbestand: /pad/naar/harvest_thes/skos/status
+	b. Doe niets zo lang er een x-aantal records staan in de /pad/naar/harvest_thes/skos/
+  c. Haal per identifier het record op en sla deze op in een subdir van /pad/naar/harvest_thes/skos/
+  c.1: Uitgelezen uit tekstbestand: /pad/naar/harvest_thes/skos/identifiers
+ B. Het idee is dat er een ingest proces volgt na de GetRecords, dat iets met de opgehaalde records doet en vervolgens de directory van geladen record verwijdert. Dit proces is uiteraard niet meegeleverd.
+ C. Command line arguments:
+  a. java -cp dist/thes.jar harvester.GetRecords [base_path] [owner_id] [maxRecords]
+  b. [base_path]: het pad dat naar de base dir verwijst waarin de harvester:
+  b.1: de logger configuratie uitleest /log4j.conf
+  c. [owner_id]: de subdirectory waarin per harvester instantie:
+  c.1: de harvesterconfiguratie wordt uitgelezen (/config)
+  c.2: de harvesterstatus wordt uitgelezen + weggeschreven (/status)
+  c.3: de identifiers worden uitgelezen (/identifiers)
+  c.4: directories met opgehaalde metadata records worden weggeschreven
+  d. [maxRecords] het maximaal aantal records dat in [base_id]/[owner_id] mag worden weggeschreven
+
+4) Het HarvestIdentifiers proces is bedoeld als een proces dat op regelmatige basis gescheduled wordt
+ A. Wat het doet:
+  a. Doe niets wanner het GetRecords proces loopt
+  a.1: dit wordt uitgelezen uit tekstbestand: /pad/naar/harvest_thes/skos/status
+  b. Haal alle record identifiers van de OAI endpoint op totdat er geen resumption token meer is
+  b.1: de identifiers worden opgeslagen in: /pad/naar/harvest_thes/skos/identifiers
+ B. Command line arguments:
+  a. java -cp dist/thes.jar harvester.HarvestIdentifiers [base_path] [owner_id]
+  b. [base_path]: het pad dat naar de base dir verwijst waarin de harvester:
+  b.1: de logger configuratie uitleest /log4j.conf
+  c. [owner_id]: de subdirectory waarin per harvester instantie:
+  c.1: de harvesterconfiguratie wordt uitgelezen (/config)
+  c.2: de harvesterstatus wordt uitgelezen + weggeschreven (/status)
+  c.3: de identifiers worden uitgelezen (/identifiers)
+  c.4: directories met opgehaalde metadata records worden weggeschreven
+

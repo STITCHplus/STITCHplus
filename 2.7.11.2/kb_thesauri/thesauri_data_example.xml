@@ -1,0 +1,1835 @@
+<?xml version="1.0"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/          http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2011-03-22T11:45:05.945Z</responseDate>
+  <request verb="ListRecords" set="GGC-THES" metadataPrefix="dcx" resumptionToken="GGC-THES!!!dcx!1200000">http://serviceso.kb.nl/mdo/oai	</request>
+  <ListRecords>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:241547466</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/241547466">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Scherpenheuvel</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:073514306</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/073514306">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Ludwig, Gerd (Duitse letterkunde)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:240794176</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/240794176">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Ludwig, Gerd (fotograaf)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:24221052X</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/24221052X">
+            <dc:type xml:lang="nl">titel</dc:type>
+            <dc:type xml:lang="en">title</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Uniforme_titels"/>
+            <skos:editorialNote xml:lang="nl">12 symfoniee&#x308;n (boek 1 en 2)</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">Giuseppe Matteo Alberti</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">Er bestaat al een op.2: Sonates, viool, b.c.</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242210651</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242210651">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Kirkegaard, Annemette</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242210732</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242210732">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Brown, Evan L.</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:189200359</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/189200359">
+            <dc:type xml:lang="nl">trefwoord</dc:type>
+            <dc:type xml:lang="en">keyword</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT_unica"/>
+            <skos:prefLabel xml:lang="nl">Sint-Martinuskerk (Sint-Oedenrode)</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Sint-Martinuskerk (Sint-Oedenrode)</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">De mantel van Sint Maarten. - 1997</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">Encyclopedie van Noord-Brabant, zie onder: Oedenrode, Sint</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">GOO-thesaurusbeheer</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242210759</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242210759">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Deffenbacher, Kenneth</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:188890017</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/188890017">
+            <dc:type xml:lang="nl">trefwoord</dc:type>
+            <dc:type xml:lang="en">keyword</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT_gewoon"/>
+            <skos:related rdf:resource="http://datao.kb.nl/thesaurus/078500397"/>
+            <skos:prefLabel xml:lang="nl">Ongepastheid</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Indecency</skos:prefLabel>
+            <skos:altLabel xml:lang="nl">Onbetamel&#x133;kheid</skos:altLabel>
+            <skos:altLabel xml:lang="nl">Onwelvoegl&#x133;kheid</skos:altLabel>
+            <skos:altLabel xml:lang="en">Impropriety</skos:altLabel>
+            <skos:editorialNote xml:lang="nl">VD12; VD Nederlands-Engels woordenboek</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">GOO-thesaurusbeheer</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:189065680</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/189065680">
+            <dc:type xml:lang="nl">trefwoord</dc:type>
+            <dc:type xml:lang="en">keyword</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT_gewoon"/>
+            <skos:broader rdf:resource="http://datao.kb.nl/thesaurus/090686942"/>
+            <skos:prefLabel xml:lang="nl">Zappen</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Zapping</skos:prefLabel>
+            <skos:altLabel xml:lang="nl">Kanaalzwemmen (televisie k&#x133;ken)</skos:altLabel>
+            <skos:scopeNote xml:lang="nl">Regelmatig wisselen van kanaal t&#x133;dens het televiesiek&#x133;ken</skos:scopeNote>
+            <skos:editorialNote xml:lang="nl">VD12; VD Engels-Nederlands woordenboek</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">GOO-thesaurusbeheer</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242210627</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242210627">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>MacGregor, Archibald Gordon (Archibald Gordon)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:070873771</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/070873771">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Noo&#x133;, Ad</skos:altLabel>
+            <skos:altLabel>Nooy, A.T.J.</skos:altLabel>
+            <skos:prefLabel>Noo&#x133;, A.T.J. (Adrianus Theresia Jacobus ; 1936-)</skos:prefLabel>
+            <skos:altLabel>Noo&#x133;, Adrianus Theresia Jacobus</skos:altLabel>
+            <skos:editorialNote xml:lang="nl">Ook: Ad Noo&#x133;</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">sociale geografie</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">methodiek van het sociaal-wetenschappel&#x133;k onderzoek</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">B0236318: prof. dr.</skos:editorialNote>
+            <skos:editorialNote>roepnaam: Ad</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:189183217</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/189183217">
+            <dc:type xml:lang="nl">trefwoord</dc:type>
+            <dc:type xml:lang="en">keyword</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/GTT_corporatie"/>
+            <skos:prefLabel xml:lang="nl">Istituto veneto di scienze, lettere ed arti</skos:prefLabel>
+            <skos:prefLabel xml:lang="en">Venetian Institute of Sciences, Letters and Arts</skos:prefLabel>
+            <skos:scopeNote xml:lang="nl">Academie van wetenschappen te Venetie&#x308;</skos:scopeNote>
+            <skos:editorialNote xml:lang="nl">World of learning, 39th ed. (1989)</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">GOO-thesaurusbeheer</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242211224</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242211224">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Anderson, E.M. (E.M. ; geoloog)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:072888806</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/072888806">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>R&#x133;khoek, C.W. (Kees)</skos:prefLabel>
+            <skos:altLabel>R&#x133;khoek, Kees</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:072295589</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/072295589">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>R&#x133;khoek, Kees</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">Niet gebruiken! zie ppn !072888806!</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242211410</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242211410">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Andersen, F.W. (F.W. ; palaeontoloog)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:071095217</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/071095217">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Pringle, John (John ; 1877-)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242211704</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242211704">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Terao, Goro&#x304;</skos:altLabel>
+            <skos:prefLabel>Terao Goro&#x304; (1921-)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242211844</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242211844">
+            <dc:type xml:lang="nl">drukker</dc:type>
+            <dc:type xml:lang="en">printer</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/drukkers"/>
+            <skos:prefLabel>Leoviler, Johannes</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:241664624</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/241664624">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Holy (Vlaardingen)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:067662323</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/067662323">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Sayers, Frances Clarke (1897-1989)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212018</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212018">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Vahle, H.-C. (Hans-Christoph)</skos:prefLabel>
+            <skos:altLabel>Vahle, Hans-Christoph</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:241695457</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/241695457">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Kruger Nationaal Park</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212042</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212042">
+            <dc:type xml:lang="nl">drukker</dc:type>
+            <dc:type xml:lang="en">printer</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/drukkers"/>
+            <skos:prefLabel>Bissolus, Johannes</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212069</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212069">
+            <dc:type xml:lang="nl">drukker</dc:type>
+            <dc:type xml:lang="en">printer</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/drukkers"/>
+            <skos:prefLabel>Mangius, Benedictus</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:174739346</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/174739346">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Bruyn, Paul De</skos:altLabel>
+            <skos:prefLabel>De Bruyn, Paul (1954-)</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">Amerikaanse geschiedenis</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212085</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212085">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Drehwald, Uwe</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:154089214</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/154089214">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Bru&#x133;n, P.J. de</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">DHV Milieu &amp; Infrastructuur</skos:editorialNote>
+            <skos:editorialNote>ir.</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:148665780</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/148665780">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Bru&#x133;n, Petra de (Petra ; 1959-)</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">Turkse letterkunde</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:241763169</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/241763169">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Nieuweroord</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:241905494</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/241905494">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">De Hilver</skos:prefLabel>
+            <skos:altLabel xml:lang="nl">Hilver, De</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:238523284</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/238523284">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Dorssers, Trees</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:099881586</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/099881586">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Bru&#x133;n, Peter de</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">Ajax Sportman Combinatie</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212271</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212271">
+            <dc:type xml:lang="nl">titel</dc:type>
+            <dc:type xml:lang="en">title</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Uniforme_titels"/>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:072861231</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/072861231">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Bruin, Peter J. de (Peter Johan ; 1964-)</skos:prefLabel>
+            <skos:altLabel>Bruin, Peter Johan de</skos:altLabel>
+            <skos:editorialNote xml:lang="nl">programmeertalen</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212328</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212328">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Ebeling, H.M.F. (-1785)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:241906075</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/241906075">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Kessel-Eik</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:069493219</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/069493219">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Bruin, Pe&#x301; de</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">Christelijk geloof</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:068951450</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/068951450">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Bruyn, Paul J.M. de</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">mb - vert. Engels-Nederlands</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212484</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212484">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Schumann, Gernot</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212557</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212557">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Talamonti, Mark S. (1956-)</skos:prefLabel>
+            <skos:editorialNote>B0218247: LC: 1956. - Northwestern University Medical School</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212581</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212581">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Wysterski, Martin</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:24221259X</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/24221259X">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Pappas, Sam G. (1970-)</skos:prefLabel>
+            <skos:editorialNote>B0218247: LC: 1970. - Northwestern University Medical School</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212662</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212662">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Hanoeman, M.</skos:altLabel>
+            <skos:prefLabel>Hanoeman, Mahinder</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212549</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212549">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Krebs, Christopher</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212719</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212719">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Supplie, Frank</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:175923434</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/175923434">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Huut, Max van</skos:prefLabel>
+            <skos:editorialNote>B0236360: architekt (Alberts en Van Huut)</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:175923418</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/175923418">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Corstens, Hetty</skos:altLabel>
+            <skos:prefLabel>Corstens-Stieger, H.J.M.</skos:prefLabel>
+            <skos:editorialNote>B0236360: cop. H.J.M. Corstens-Stieger ; dir. Stichting Kalorama (o.a. verpleeghuis)</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:074661736</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/074661736">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Carr, J.L. (economie)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212891</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212891">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Carr, Joyce (1921-2001)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212905</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212905">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Claassens, H.F.</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212921</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212921">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Loomis, John</skos:prefLabel>
+            <skos:editorialNote>B0218248: Department of Agricultural and Resource Economics, Colorado</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212948</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212948">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Pereira-Ramos, J.P.</skos:prefLabel>
+            <skos:editorialNote>B0217994, p.145: Labaratoire d'Electrochimie , Catalyse et Synthe&#x300;se Organique, CNRS [...], Thiais, France</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:241990327</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/241990327">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Kaaistoep</skos:prefLabel>
+            <skos:altLabel xml:lang="nl">De Kaaistoep</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242212999</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242212999">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Helfand, Gloria</skos:prefLabel>
+            <skos:editorialNote>B0218248: School of Natural Resources and the Environment, Michigan</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:24221147X</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/24221147X">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Farad&#x323;i&#x304; al-H&#x323;alabi&#x304;, Muh&#x323;ammad b. Yah&#x323;ya&#x304; al-</skos:altLabel>
+            <skos:altLabel>Farad&#x323;i&#x304; al-H&#x323;alabi&#x304;, Nag&#x30C;m al-Di&#x304;n Muh&#x323;ammad b. Yah&#x323;ya&#x304; al-</skos:altLabel>
+            <skos:altLabel>Farad&#x323;i&#x304; al-S&#x30C;a&#x304;fi&#x2BF;i&#x304;, Muh&#x323;ammad b. Yah&#x323;ya&#x304; al-</skos:altLabel>
+            <skos:altLabel>Farad&#x323;i&#x304; al-S&#x30C;a&#x304;fi&#x2BF;i&#x304;, Nag&#x30C;m al-Di&#x304;n Muh&#x323;ammad b. Yah&#x323;ya&#x304; al-</skos:altLabel>
+            <skos:altLabel>Nag&#x30C;m al-Farad&#x323;i&#x304;, Muh&#x323;ammad b. Yah&#x323;ya&#x304; al-</skos:altLabel>
+            <skos:prefLabel>Farad&#x323;i&#x304;, Muh&#x323;ammad b. Yah&#x323;ya&#x304; al- (Nag&#x30C;m al-Di&#x304;n Muh&#x323;ammad b. Yah&#x323;ya&#x304; ; -1679)</skos:prefLabel>
+            <skos:altLabel>Farad&#x323;i&#x304;, Nag&#x30C;m al-Di&#x304;n Muh&#x323;ammad b. Yah&#x323;ya&#x304; al-</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242209718</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242209718">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Zawka&#x304;ri&#x304;, Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-</skos:altLabel>
+            <skos:altLabel>Zawka&#x304;ri&#x304;, Nu&#x304;r al-Di&#x304;n Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-</skos:altLabel>
+            <skos:altLabel>Zu&#x304;ka&#x304;ri&#x304; al-&#x2BF;Adawi&#x304;, Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-</skos:altLabel>
+            <skos:altLabel>Zu&#x304;ka&#x304;ri&#x304; al-&#x2BF;Adawi&#x304;, Nu&#x304;r al-Di&#x304;n Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-</skos:altLabel>
+            <skos:altLabel>&#x2BF;Adawi&#x304;, Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-Zu&#x304;ka&#x304;ri&#x304; al-</skos:altLabel>
+            <skos:altLabel>&#x2BF;Adawi&#x304;, Nu&#x304;r al-Di&#x304;n Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-Zu&#x304;ka&#x304;ri&#x304; al-</skos:altLabel>
+            <skos:altLabel>&#x2BF;Adwi&#x304;, Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-Zu&#x304;ka&#x304;ri&#x304; al-</skos:altLabel>
+            <skos:altLabel>&#x2BF;Adwi&#x304;, Nu&#x304;r al-Di&#x304;n Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-Zu&#x304;ka&#x304;ri&#x304; al-</skos:altLabel>
+            <skos:altLabel>&#x2BF;Idwi&#x304;, Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-Zu&#x304;ka&#x304;ri&#x304; al-</skos:altLabel>
+            <skos:altLabel>&#x2BF;Idwi&#x304;, Nu&#x304;r al-Di&#x304;n Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-Zu&#x304;ka&#x304;ri&#x304; al-</skos:altLabel>
+            <skos:prefLabel>Zu&#x304;ka&#x304;ri&#x304;, Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al- (Nu&#x304;r al-Di&#x304;n Mah&#x323;mu&#x304;d b. Muh&#x323;ammad ; -1623)</skos:prefLabel>
+            <skos:altLabel>Zu&#x304;ka&#x304;ri&#x304;, Nu&#x304;r al-Di&#x304;n Mah&#x323;mu&#x304;d b. Muh&#x323;ammad al-</skos:altLabel>
+            <skos:editorialNote xml:lang="nl">Ook een boek geschreven o.d.t.: Is&#x30C;a&#x304;ra&#x304;t ila&#x304; ama&#x304;kin al-ziya&#x304;ra&#x304;t zoals de auteur in PPN !229317014!, zie Zirikli&#x304; 7, 183</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213197</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213197">
+            <dc:type xml:lang="nl">titel</dc:type>
+            <dc:type xml:lang="en">title</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Uniforme_titels"/>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242067948</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242067948">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Karakoram</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:071797262</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/071797262">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Theuvenet, W. (Willem Johannes ; 1950-)</skos:prefLabel>
+            <skos:altLabel>Theuvenet, Willem Johannes</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213219</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213219">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Inbaraj, Sonny</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">Malaysian journalist</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:24221326X</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/24221326X">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Wahid, M. Hidayat Nur</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:238214516</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/238214516">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Ra&#x2BE;u&#x304;f al-S&#x30C;ayk&#x331;li&#x304;, Muh&#x323;ammad</skos:altLabel>
+            <skos:altLabel>S&#x30C;ayk&#x331;ali&#x304;, Muh&#x323;ammad Ra&#x2BE;u&#x304;f al-</skos:altLabel>
+            <skos:altLabel>Ra&#x2BE;u&#x304;f al-S&#x30C;ayk&#x331;ali&#x304;, Muh&#x323;ammad</skos:altLabel>
+            <skos:altLabel>S&#x30C;ayk&#x331;ili&#x304;, Muh&#x323;ammad Ra&#x2BE;u&#x304;f al-</skos:altLabel>
+            <skos:altLabel>Ra&#x2BE;u&#x304;f al-S&#x30C;ayk&#x331;ili&#x304;, Muh&#x323;ammad</skos:altLabel>
+            <skos:altLabel>S&#x30C;ayk&#x331;uli&#x304;, Muh&#x323;ammad Ra&#x2BE;u&#x304;f al-</skos:altLabel>
+            <skos:altLabel>Ra&#x2BE;u&#x304;f al-S&#x30C;ayk&#x331;uli&#x304;, Muh&#x323;ammad</skos:altLabel>
+            <skos:prefLabel>S&#x30C;ayk&#x331;li&#x304;, Muh&#x323;ammad Ra&#x2BE;u&#x304;f al- (1882-1965)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213049</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213049">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Burgess, Iain Cumming (Iain Cumming)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213456</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213456">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Benfield, A.C. (A.C.)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213553</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213553">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Powell, J.H. (J.H.)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:24221360X</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/24221360X">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Holliday, Douglas Watson (Douglas Watson)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213634</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213634">
+            <dc:type xml:lang="nl">titel</dc:type>
+            <dc:type xml:lang="en">title</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Uniforme_titels"/>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:111012457</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/111012457">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Ga&#x304;ndhi&#x304;, Nandita&#x304;</skos:altLabel>
+            <skos:altLabel>Gandhi, Nandita</skos:altLabel>
+            <skos:prefLabel>Nandita&#x304; Ga&#x304;ndhi&#x304;</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213715</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213715">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Gustafsson, Martin</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:073765074</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/073765074">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Hertzberg, Lars</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213855</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213855">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Dundas, D.L. (D.L.)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213758</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213758">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Saint-Ange, Jacques Forton (sieur de)</skos:altLabel>
+            <skos:altLabel>Saint-Ange</skos:altLabel>
+            <skos:prefLabel>Forton, Jacques (Jacques ; sieur de Saint-Ange ; -ca1651)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242070604</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242070604">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Tsavo</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213928</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213928">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Abraham, D.A. (D.A. ; geoloog)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242100961</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242100961">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Straatsburg</skos:prefLabel>
+            <skos:altLabel xml:lang="nl">Strasbourg</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242214134</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242214134">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Ridloi, Ustaz M.</skos:altLabel>
+            <skos:prefLabel>Ridlo'i, M. (Ustaz)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242213871</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242213871">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Tymieniecki, Casimiro</skos:altLabel>
+            <skos:prefLabel>Tymieniecki, Kazimierz (Kazimierz ; 1887-1968)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242116183</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242116183">
+            <dc:type xml:lang="nl">onderwerp</dc:type>
+            <dc:type xml:lang="en">subject</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman"/>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Brinkman_geografisch"/>
+            <skos:prefLabel xml:lang="nl">Overloon</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:069272697</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/069272697">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Smit, Me&#x133;er C. (Me&#x133;er Cornelis ; 1911-1981)</skos:prefLabel>
+            <skos:altLabel>Smit, Me&#x133;er Cornelis</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:111012651</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/111012651">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>S&#x301;a&#x304;ha, Nandita&#x304;</skos:altLabel>
+            <skos:altLabel>Nandita Anilkumar Shah</skos:altLabel>
+            <skos:prefLabel>Nandita&#x304; S&#x301;a&#x304;ha</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:127318976</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/127318976">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Holmes, R. Derby</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242214568</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242214568">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Holmes, R. (R. ; geoloog)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242214584</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242214584">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Fannin, N.G.T. (N.G.T.)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242211194</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242211194">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Halajczuk, Bohdan T.</skos:altLabel>
+            <skos:prefLabel>Halajc&#x30C;uk, Bohdan T.</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:088060659</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/088060659">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Linsemair, K.E. (Karl-Eduard)</skos:prefLabel>
+            <skos:altLabel>Linsenmair, Karl-Eduard</skos:altLabel>
+            <skos:editorialNote>B0218249: Department of Animal Ecology and Tropical Biology, Germany</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:069427674</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/069427674">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Gu&#x308;nther, Konrad (1874-)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:071683895</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/071683895">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Jacobs, Jan (1957-)</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">kunstmatige intelligentie</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242215122</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242215122">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Sturman, Kathryn</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:070936110</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/070936110">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Wallis, Kenneth F. (Kenneth Frank ; 1938-)</skos:prefLabel>
+            <skos:altLabel>Wallis, Kenneth Frank</skos:altLabel>
+            <skos:editorialNote xml:lang="nl">econometrie</skos:editorialNote>
+            <skos:editorialNote>B0243342: Department of Economics, University of Warwick, UK</skos:editorialNote>
+            <skos:editorialNote>Gebruikt ook: K.F. Wallis</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:135384826</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/135384826">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Jacobs, J.M.</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">Energieonderzoek Centrum Nederland</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:13538446X</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/13538446X">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Jacobs, J.H. (Johan Herman)</skos:prefLabel>
+            <skos:altLabel>Jacobs, Johan Herman</skos:altLabel>
+            <skos:editorialNote xml:lang="nl">Of 'Johann Herman'</skos:editorialNote>
+            <skos:editorialNote xml:lang="nl">f. 1915</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:072560185</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/072560185">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Milo, D.W.L. (Dirk Willem Lodew&#x133;k ; 1911-1992)</skos:prefLabel>
+            <skos:altLabel>Milo, Dirk Willem Lodew&#x133;k</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:072659025</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/072659025">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Mellegers, Pieter (Pieter Cornelis ; 1862-1943)</skos:prefLabel>
+            <skos:altLabel>Mellegers, Pieter Cornelis</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:075025124</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/075025124">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Lelandus, Johannes</skos:altLabel>
+            <skos:prefLabel>Leland, John (John ; ca1506-1552)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:072659033</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/072659033">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Tak, Marigje van der</skos:altLabel>
+            <skos:prefLabel>Mellegers, Marigje (Marigje ; 1876-1948)</skos:prefLabel>
+            <skos:altLabel>Mellegers-van der Tak, Marigje</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242215327</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242215327">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:prefLabel>Kornokov, P.F.</skos:prefLabel>
+            <skos:editorialNote xml:lang="nl">schaken</skos:editorialNote>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242215343</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242215343">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Boogaard-Dekker, Mina</skos:altLabel>
+            <skos:prefLabel>Boogaard, Mina (Willem&#x133;ntje Baantje ; 1870-1960)</skos:prefLabel>
+            <skos:altLabel>Dekker, Willem&#x133;ntje Baantje</skos:altLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>GGC-THES:AC:242215378</identifier>
+        <datestamp>2010-07-30</datestamp>
+        <setSpec>GGC-THES</setSpec>
+      </header>
+      <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+          <skos:Concept rdf:about="http://datao.kb.nl/thesaurus/242215378">
+            <dc:type xml:lang="nl">persoon</dc:type>
+            <dc:type xml:lang="en">person</dc:type>
+            <skos:inScheme rdf:resource="http://datao.kb.nl/thesaurus/Persoonsnamen"/>
+            <skos:altLabel>Liang Phoa, Khee</skos:altLabel>
+            <skos:altLabel>Phoa, K.L.</skos:altLabel>
+            <skos:prefLabel>Phoa, Khee Liang (M.i.v. sept 2002 Staatssecretaris van Emancipatie en Familiezaken)</skos:prefLabel>
+          </skos:Concept>
+        </rdf:RDF>
+      </metadata>
+    </record>
+    <resumptionToken>GGC-THES!!!dcx!1200100</resumptionToken>
+  </ListRecords>
+</OAI-PMH>

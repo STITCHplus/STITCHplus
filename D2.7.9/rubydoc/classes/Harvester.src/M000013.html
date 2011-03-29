@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>save_resumption_token (Harvester)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File harvester.rb, line 166</span>
+                <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">save_resumption_token</span>(<span class="ruby-identifier">response</span>)
+                  <span class="ruby-comment cmt"># Get the resumption token from the parsed OAI response</span>
+                        <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">at</span>(<span class="ruby-value str">&quot;/OAI-PMH/ListRecords/resumptionToken&quot;</span>)
+                          <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">resumption_token</span> = <span class="ruby-identifier">response</span>.<span class="ruby-identifier">at</span>(<span class="ruby-value str">&quot;/OAI-PMH/ListRecords/resumptionToken&quot;</span>).<span class="ruby-identifier">innerText</span>
+                        <span class="ruby-keyword kw">else</span>
+                                <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">resumption_token</span> = <span class="ruby-value str">&quot;&quot;</span>
+                        <span class="ruby-keyword kw">end</span>
+
+                  <span class="ruby-comment cmt"># Save the resumption token in a file</span>
+                  <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-value str">&quot;resumption_token&quot;</span>, <span class="ruby-value str">&quot;w&quot;</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">resumption_token</span>) }
+                        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-value str">&quot;resumption_tokens.log&quot;</span>, <span class="ruby-value str">&quot;a&quot;</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">f</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">resumption_token</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;\n&quot;</span>) }
+                        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Resumption token saved successfully: #{resumption_token}&quot;</span>
+                <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>
