@@ -72,15 +72,14 @@ def post_xml_to_solr(xml):
 
 if __name__ == "__main__":
     dbp = dbpedia.DBpedia(prefLang='nl')
-    dbp.DEBUG=0
+    dbp.DEBUG=1
     resource = dbp.next()
     i=0
     total=""
 
     while resource:
+
         doc = Element("add")
-
-
         add = SubElement(doc, "doc")
 
         sub = SubElement(add, 'field', {"name" : "id" })
@@ -99,7 +98,7 @@ if __name__ == "__main__":
 
         rtype = "misc" # Default type of record. 
 
-        for name in dbp.dbpedia_label.keys():        
+        for name in dbp.dbpedia_label.keys():
             if dbp.extract(name):
                 if not name == 'label':
                     if name == 'comment' and ( dbp.extract('abstract') == dbp.extract(name) ):
@@ -107,6 +106,15 @@ if __name__ == "__main__":
                     else:
                         sub = SubElement(add, 'field', {"name" : name })
                         sub.text = dbp.extract(name)
+
+                        if name == "dbpedia_type" and sub.text.find('Scientist') > -1: rtype = "person"
+                        if name == "dbpedia_type" and sub.text.find('Politician') > -1: rtype = "person"
+                        if name == "dbpedia_type" and sub.text.find('Person') > -1: rtype = "person"
+                        if name == "dbpedia_type" and sub.text.find('Place') > -1: rtype = "place"
+                        if name == "dbpedia_type" and sub.text.find('PopulatedPlace') > -1: rtype = "place"
+                        if name == "dbpedia_type" and sub.text.find('Country') > -1: rtype = "place"
+                        if name == "dbpedia_type" and sub.text.find('Organisation') > -1: rtype = "organisation"
+
                         sub = SubElement(add, 'field', {"name" : name+"_str" })
                         sub.text = dbp.extract(name)
 
@@ -145,14 +153,10 @@ if __name__ == "__main__":
         sub.text = rtype
 
         i+=1
-        if post_xml_to_solr(etree.tostring(doc)):
-            print(i, label)
-            pass
-        #total+=etree.tostring(doc)[5:-6]
-        #if i == 100:
-        #    break
-
+        if i>9494:
+            if post_xml_to_solr(etree.tostring(doc)):
+                print(i, label)
+        print(i, label)
 
         resource = dbp.next()
-
-    #print("<add>"+total+"</add>")
+        

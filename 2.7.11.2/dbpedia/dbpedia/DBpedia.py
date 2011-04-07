@@ -85,6 +85,7 @@ class DBpedia(object):
                      'dod' : 'http://dbpedia.org/ontology/deathDate',
                      'yod' : 'http://dbpedia.org/ontology/deathYear',
                      'deathcause' : 'http://dbpedia.org/property/deathCause',
+                     'dbpedia_type' : 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
                      'deathplace' : 'http://dbpedia.org/property/deathPlace',
                      'website' : 'http://dbpedia.org/property/website',
                      'recidence' : 'http://dbpedia.org/ontology/residence' } 
@@ -194,11 +195,7 @@ class DBpedia(object):
 
         # Json parser
         if self.dbpedia_data_type == "json":
-            try:
-                data = json.loads(self.dbpedia_data)
-            except:
-                self.get_resource("ntriples")
-                return(self.extract(labelname))
+            data = json.loads(self.dbpedia_data)
             
             for item in data.values():
                 if self.dbpedia_label[labelname] in item.keys():
@@ -215,8 +212,8 @@ class DBpedia(object):
 
         # Ntriples parser
         if self.dbpedia_data_type == "ntriples":
-            result = False
             # First try to get the information in the prefLang
+            result = False
             for item in self.dbpedia_data.split('\n'):
                 if len(item) > 0:
                     if item.find('"@'+self.lang) > -1:
@@ -228,15 +225,16 @@ class DBpedia(object):
             # Fallback if there is no lang available.
             for item in self.dbpedia_data.split('\n'):
                 if len(item.strip()) > 0:
-                    if item.split('\t')[1] == "<" + self.dbpedia_label[labelname] + ">":
-                        if item.split('\t')[2].find('"') > -1:
-                            return(item.split('\t')[2].split('"')[1])
-                        elif item.split('\t')[2].find('>') > -1:
-                            try:
-                                return(bytes(item.split('\t')[2].split('>')[0].split('<')[1], 'ascii').decode('unicode-escape')) 
-                                # UNICODE escape convert Belgi\u00EB to België
-                            except:
-                                return(item.split('\t')[2].split('>')[0].split('<')[1])
+                    if len(item.split('\t')) >1:
+                        if item.split('\t')[1] == "<" + self.dbpedia_label[labelname] + ">":
+                            if item.split('\t')[2].find('"') > -1:
+                                return(item.split('\t')[2].split('"')[1])
+                            elif item.split('\t')[2].find('>') > -1:
+                                try:
+                                    return(bytes(item.split('\t')[2].split('>')[0].split('<')[1], 'ascii').decode('unicode-escape')) 
+                                    # UNICODE escape convert Belgi\u00EB to België
+                                except:
+                                    return(item.split('\t')[2].split('>')[0].split('<')[1])
         # Jsod parser
         if self.dbpedia_data_type == "jsod":
             try:
