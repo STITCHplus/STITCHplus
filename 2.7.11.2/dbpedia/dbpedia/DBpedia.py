@@ -195,7 +195,10 @@ class DBpedia(object):
 
         # Json parser
         if self.dbpedia_data_type == "json":
-            data = json.loads(self.dbpedia_data)
+            try:
+                data = json.loads(self.dbpedia_data)
+            except:
+                return(False)
             
             for item in data.values():
                 if self.dbpedia_label[labelname] in item.keys():
