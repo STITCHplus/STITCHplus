@@ -214,6 +214,10 @@ class DBpedia(object):
                             return(val['value'])
 
         # Ntriples parser
+        #
+        # minor bug : 
+        #   if an abstract contains a \n newline, only the first part of the abstract is indexed at this moment.
+        #
         if self.dbpedia_data_type == "ntriples":
             # First try to get the information in the prefLang
             result = False
