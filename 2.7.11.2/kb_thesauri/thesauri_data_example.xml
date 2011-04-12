@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+
+<!-- 100 Example kb-thesauri records  -->
 <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/          http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
   <responseDate>2011-03-22T11:45:05.945Z</responseDate>
   <request verb="ListRecords" set="GGC-THES" metadataPrefix="dcx" resumptionToken="GGC-THES!!!dcx!1200000">http://serviceso.kb.nl/mdo/oai	</request>
