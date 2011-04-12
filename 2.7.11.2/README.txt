@@ -31,3 +31,9 @@ Process :
         Start the DBpedia harvester, and wait for the index to be filled.
 
         ./dbpedia/DBpedia_to_solr.py
+
+    Step 3 : 
+
+        run ./align_thesauri_dbpedia.py
+
+

@@ -153,10 +153,11 @@ if __name__ == "__main__":
         sub.text = rtype
 
         i+=1
-        if i>9494:
+        if i>51461:
             if post_xml_to_solr(etree.tostring(doc)):
-                print(i, label)
-        print(i, label)
+                print("ADD" , i, label)
+        else:
+            print(i, label)
 
         resource = dbp.next()
         
