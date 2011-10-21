@@ -3,16 +3,18 @@ De java harvester is een NetBeans project, dus dat is de eenvoudigste manier om 
 
 Gebruik:
 -------
-1) unzip java_harvest_conf_example.zip in een directory naar keuze
-2) unzip java_harvester.src.zip in een directory naar keuze
-3) Start het proces voor GetRecords vanuit de project root (/pad/naar/thes/)
- # java -cp dist/thes.jar harvester.GetRecords /pad/naar/harvest_thes/ skos 100
-4) Start het proces voor HarvestIdendifiers vanuit de project root (/pad/naar/thes/)
- # java -cp dist/thes.jar harvester.HarvestIdentifiers /pad/naar/harvest_thes/ skos
+1) cd naar project root
+ # cd /path/to/java_harvester
+2) compileer project met ant
+ # ant
+3) Start het proces voor GetRecords vanuit de project root 
+ # java -cp dist/thes.jar harvester.GetRecords example_config/ skos 100
+4) Start het proces voor HarvestIdendifiers vanuit de project root 
+ # java -cp dist/thes.jar harvester.HarvestIdentifiers example_config/ skos
 
 Toelichting:
 ------------
-1) In deze zip staan:
+1) Configuratie:
  - log4j.conf (instellingen voor de logger)
  - skos/config (configuratie voor de harvester)
  - skos/GGC-THES-AC-314492364/* (voorbeeld output van een OAI GetRecord)
@@ -27,7 +29,7 @@ Toelichting:
  - identifierMetadataPrefix (metadata prefix voor ListIdentifiers OAI)
  - recordMetadataPrefix (metadata prefix voor GetRecord OAI)
 
-2) De broncode van de java harvester. Gebruik is het eenvoudigst via de meegeleverde jar (dist/thes.jar)
+2) De broncode van de java harvester. 
 
 3) Het GetRecords proces is bedoeld als latent proces dat altijd draait. 
  A. Wat het doet:

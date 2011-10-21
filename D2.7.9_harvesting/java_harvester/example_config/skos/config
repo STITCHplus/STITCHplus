@@ -1,6 +1,6 @@
 name;KB thesaurus
 owner_id;skos
-url;http://kbresearch.nl/general/thesaurus_harvest/
+url;http://services.kb.nl/mdo/oai
 set;GGC-THES
 usesResumptionToken;true
 fromDate;2010-06-01
