@@ -9,4 +9,4 @@ ruby-xslt >= 0.9.8
 run:
 # ruby -rubygems tagall.rb -p3000
 
-to test: adjust demo.html to refer to: http://localhost:3000/
+to test open demo.html in your favourite browser
