@@ -1,0 +1,97 @@
+body {
+	font-family: arial, sans;
+	font-size: 8pt;
+}
+img {
+	border: 0
+}
+#search_box {
+	clear: both;
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+.links {
+	width: 250px;
+}
+.links div {
+	clear: right;
+	margin-top: 4px;
+}
+.links div .tools {
+	float: right
+}
+.links .title {
+	font-weight: bold;
+	margin-top: 6px;
+	clear: both;
+}
+a {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+a.more_link {
+	clear: right;
+	float: right;
+	display: block;
+	margin: 5px;
+}
+a.less_link {
+	float: left;
+	display: block;
+	margin: 5px;
+}
+#search_result_tabs a.tab {
+	display: block;
+	width: 80px;
+	height: 20px;
+	float: left;
+	background-color: #ddd;
+}
+#search_result_tabs a.selected {
+	color: red;
+	background-color: #eee;
+}
+#search_result_tabs a.tab div {
+	margin-top: 5px;
+}
+#search_results .result_window {
+	clear: left;
+}
+#info_block {
+	clear: both;
+	width: 250px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #eee;
+	padding: 3px;
+	height: 180px;
+	overflow: auto;
+}
+#info_flags {
+	margin-top: 5px;
+}
+#info_header {
+	font-weight: bold;	
+	font-size: 10px;
+}
+
+#info_properties {
+	margin-top: 10px;
+}
+
+#info_properties dl {
+	margin: 0;
+}
+
+#info_properties dl dt {
+	font-weight: bold;
+	background-color: #ffd;
+}
+
+#info_properties dl dd {
+	padding: 0 0 10px 5px;
+	margin: 0;
+	background-color: #fee;
+	overflow: hidden;
+}

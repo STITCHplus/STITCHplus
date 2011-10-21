@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type: content=text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script type="text/javascript" src="js/prototype.js"></script>
+		<script type="text/javascript" src="js/easyXDM.js"></script>
+		<script type="text/javascript" src="js/link.js"></script>
+		<script type="text/javascript" src="js/finder.js"></script>
+		<script type="text/javascript" src="js/resultset.js"></script>
+		<script type="text/javascript" src="js/global.js"></script>
+		<% if @socket %>
+			<script type="text/javascript" src="js/socket.js"></script>
+		<% end %>
+		
+		<script type="text/javascript">
+			namespaces = <%= @namespaces %>;
+			window.onload = function() {
+				new Ajax.Request("/database/retrieve.py?url=<%= @identifier %>&timestampij=" + (new Date().getTime()), {
+					"method": "get",
+					"onSuccess": function(r) {
+						load_links(r.responseText.evalJSON());
+						start_app();
+					}
+				});
+			}
+
+			function start_app() {
+				identifier = "<%= @identifier %>";
+				search_domains = <%= @search_domains %>;
+				DOMAIN_NAMES = <%= @domain_names %>;
+				load_finders(<%= @domains %>);
+				$$('.search_spinner').each(Element.hide);
+				$('info_block').hide();
+				links.each(function(l) { l.render() });
+			}
+		</script>
+	</head>
+	<body>
+		<% if @url %>
+			<div style="float: right">
+		<% end %>
+		<div id="links" class="links">
+			<div class="title">Tags</div>
+			<div id="user"></div>
+		</div>
+
+		<div id="search_box">
+			<input id="q" onchange="send_on_return(event)" type="text" />
+			<button onclick="send_searches($('q').value)">Search</button>
+		</div>
+
+		<div id="info_block">
+			<a style="float: right" onclick="$('info_block').hide(); $('search_results').show(); $('search_result_tabs').show();">close</a>
+			<div id="info_header"></div>
+			<div id="info_flags"></div>
+			<div id="info_add" style="margin-top: 5px"></div>
+			<img id="info_spinner" class="search_spinner" src="img/spinner.gif" />
+			<div id="info_properties"></div>
+		</div>
+
+		<div id="search_result_tabs"></div>
+		<div id="search_results">
+			<img id="search_spinner" class="search_spinner" src="img/spinner.gif" />
+		</div>
+
+		<% if @url %>
+			</div>
+		<% end %>
+
+		<% if @url %>
+			<div style="float: left; width: 75%; height: 95%">
+				<iframe style="width: 100%; height: 100%" src="<%= @url %>"></iframe>
+			</div>
+		<% end %>
+
+	</body>
+</html>
