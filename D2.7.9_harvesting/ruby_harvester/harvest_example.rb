@@ -34,5 +34,5 @@ class SKOSHarvester < Harvester
 	end
 end
 
-harvester = SKOSHarvester.new("http://kbresearch.nl/general/thesaurus_harvest/?verb=ListRecords&set=GGC-THES&metadataPrefix=dcx", {:from_date => "2010-06-01"} )
+harvester = SKOSHarvester.new("http://services.kb.nl/mdo/oai?verb=ListRecords&set=GGC-THES&metadataPrefix=dcx", {:from_date => "2010-06-01"} )
 harvester.run 
