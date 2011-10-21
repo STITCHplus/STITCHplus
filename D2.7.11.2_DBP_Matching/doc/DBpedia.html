@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module DBpedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>DBpedia</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="STITCHplus/2.7.11.2/dbpedia/dbpedia/DBpedia.py">STITCHplus/2.7.11.2/dbpedia/dbpedia/DBpedia.py</a></font></td></tr></table>
+    <p><tt>Copyright&nbsp;(c)&nbsp;2011&nbsp;KB,&nbsp;Koninklijke&nbsp;Bibliotheek.<br>
+&nbsp;<br>
+This&nbsp;file&nbsp;is&nbsp;part&nbsp;of&nbsp;the&nbsp;STITCHplus&nbsp;CATCHplus&nbsp;project.<br>
+(<a href="http://www.catchplus.nl/en/diensten/deelprojecten/stitchplus/">http://www.catchplus.nl/en/diensten/deelprojecten/stitchplus/</a>)<br>
+&nbsp;<br>
+<a href="#DBpedia">DBpedia</a>.py&nbsp;is&nbsp;free&nbsp;software:&nbsp;you&nbsp;can&nbsp;redistribute&nbsp;it&nbsp;and/or&nbsp;modify<br>
+it&nbsp;under&nbsp;the&nbsp;terms&nbsp;of&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License&nbsp;as&nbsp;published&nbsp;by<br>
+the&nbsp;Free&nbsp;Software&nbsp;Foundation,&nbsp;either&nbsp;version&nbsp;3&nbsp;of&nbsp;the&nbsp;License,&nbsp;or<br>
+(at&nbsp;your&nbsp;option)&nbsp;any&nbsp;later&nbsp;version.<br>
+&nbsp;<br>
+<a href="#DBpedia">DBpedia</a>.py&nbsp;is&nbsp;distributed&nbsp;in&nbsp;the&nbsp;hope&nbsp;that&nbsp;it&nbsp;will&nbsp;be&nbsp;useful,<br>
+but&nbsp;WITHOUT&nbsp;ANY&nbsp;WARRANTY;&nbsp;without&nbsp;even&nbsp;the&nbsp;implied&nbsp;warranty&nbsp;of<br>
+MERCHANTABILITY&nbsp;or&nbsp;FITNESS&nbsp;FOR&nbsp;A&nbsp;PARTICULAR&nbsp;PURPOSE.&nbsp;&nbsp;See&nbsp;the<br>
+GNU&nbsp;General&nbsp;Public&nbsp;License&nbsp;for&nbsp;more&nbsp;details.<br>
+&nbsp;<br>
+You&nbsp;should&nbsp;have&nbsp;received&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;GNU&nbsp;General&nbsp;Public&nbsp;License<br>
+along&nbsp;with&nbsp;<a href="#DBpedia">DBpedia</a>.py.&nbsp;If&nbsp;not,&nbsp;see&nbsp;&lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="bz2.html">bz2</a><br>
+<a href="xml.etree.ElementTree.html">xml.etree.ElementTree</a><br>
+</td><td width="25%" valign=top><a href="http.html">http</a><br>
+<a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+<a href="urllib.html">urllib</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="DBpedia.html#DBpedia">DBpedia</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DBpedia">class <strong>DBpedia</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#DBpedia">DBpedia</a>&nbsp;downloads&nbsp;the&nbsp;label.bz2&nbsp;file&nbsp;from&nbsp;<a href="http://downloads.dbpedia.org/">http://downloads.dbpedia.org/</a>&nbsp;if&nbsp;necessary,<br>
+by&nbsp;default&nbsp;it&nbsp;will&nbsp;open&nbsp;and&nbsp;parse&nbsp;the&nbsp;file,&nbsp;it&nbsp;uses&nbsp;an&nbsp;itterator&nbsp;to&nbsp;traverse.<br>
+&nbsp;<br>
+usage&nbsp;:<br>
+&nbsp;<br>
+&gt;&gt;&gt;&nbsp;dbpedia&nbsp;=&nbsp;<a href="#DBpedia">DBpedia</a>('nl')<br>
+&gt;&gt;&gt;&nbsp;dbpedia.<a href="#DBpedia-next">next</a>()<br>
+&gt;&gt;&gt;&nbsp;dbpedia.<a href="#DBpedia-extract">extract</a>('label')<br>
+&gt;&gt;&gt;&nbsp;dbpedia.<a href="#DBpedia-extract">extract</a>('comment')<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DBpedia-__init__"><strong>__init__</strong></a>(self, prefLang<font color="#909090">='nl'</font>)</dt><dd><tt>Open&nbsp;or&nbsp;Download&nbsp;and&nbsp;open&nbsp;the&nbsp;label.bz&nbsp;file&nbsp;from&nbsp;<a href="#DBpedia">DBpedia</a>.<br>
+'fh'&nbsp;contains&nbsp;the&nbsp;open&nbsp;file&nbsp;handle.</tt></dd></dl>
+
+<dl><dt><a name="DBpedia-__iter__"><strong>__iter__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="DBpedia-download_labels"><strong>download_labels</strong></a>(self)</dt><dd><tt>Fetches&nbsp;.bz2&nbsp;label&nbsp;file&nbsp;from&nbsp;the&nbsp;<a href="#DBpedia">DBpedia</a>&nbsp;download&nbsp;site.<br>
+(<a href="http://downloads.dbpedia.org/">http://downloads.dbpedia.org/</a>)&nbsp;and&nbsp;put&nbsp;it&nbsp;in&nbsp;the&nbsp;CACHE_DIR&nbsp;path.</tt></dd></dl>
+
+<dl><dt><a name="DBpedia-extract"><strong>extract</strong></a>(self, labelname)</dt><dd><tt>Extract&nbsp;the&nbsp;wanted&nbsp;label&nbsp;from&nbsp;the&nbsp;<a href="#DBpedia">DBpedia</a>&nbsp;<a href="builtins.html#object">object</a>,&nbsp;and&nbsp;return&nbsp;the&nbsp;value.<br>
+Since&nbsp;there&nbsp;are&nbsp;different&nbsp;forms&nbsp;of&nbsp;<a href="#DBpedia">DBpedia</a>&nbsp;objects,&nbsp;there&nbsp;are&nbsp;several&nbsp;parsers.</tt></dd></dl>
+
+<dl><dt><a name="DBpedia-get_data"><strong>get_data</strong></a>(self, url)</dt><dd><tt>Fetch&nbsp;data&nbsp;from&nbsp;given&nbsp;url,&nbsp;and&nbsp;store&nbsp;it&nbsp;in&nbsp;'dbpedia_data'&nbsp;and&nbsp;return&nbsp;True.<br>
+In&nbsp;case&nbsp;of&nbsp;failure&nbsp;return&nbsp;False.</tt></dd></dl>
+
+<dl><dt><a name="DBpedia-get_resource"><strong>get_resource</strong></a>(self, pref_type<font color="#909090">='ntriples'</font>)</dt><dd><tt>The&nbsp;<a href="#DBpedia">DBpedia</a>&nbsp;resource&nbsp;can&nbsp;take&nbsp;on&nbsp;different&nbsp;forms,&nbsp;<br>
+it&nbsp;is&nbsp;either&nbsp;in&nbsp;'json',&nbsp;'jsod'&nbsp;or&nbsp;'ntriples'&nbsp;format.<br>
+&nbsp;<br>
+The&nbsp;different&nbsp;formats&nbsp;require&nbsp;different&nbsp;kind&nbsp;of&nbsp;parsing.<br>
+'dbpedia_data_type'&nbsp;is&nbsp;used&nbsp;to&nbsp;store&nbsp;the&nbsp;format&nbsp;information.<br>
+'dbpedia_data'&nbsp;contains&nbsp;the&nbsp;raw&nbsp;data.<br>
+&nbsp;<br>
+If&nbsp;a&nbsp;type&nbsp;is&nbsp;not&nbsp;available&nbsp;or&nbsp;parsable,&nbsp;another&nbsp;format&nbsp;will&nbsp;be&nbsp;fetched.<br>
+The&nbsp;following&nbsp;order&nbsp;is&nbsp;used&nbsp;:&nbsp;'ntriples',&nbsp;'json',&nbsp;'jsod'.</tt></dd></dl>
+
+<dl><dt><a name="DBpedia-next"><strong>next</strong></a>(self)</dt><dd><tt>Get&nbsp;next&nbsp;<a href="#DBpedia">DBpedia</a>&nbsp;label,&nbsp;and&nbsp;download&nbsp;the&nbsp;corresponding&nbsp;<a href="builtins.html#object">object</a>,<br>
+and&nbsp;return&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;<a href="#DBpedia">DBpedia</a>&nbsp;<a href="builtins.html#object">object</a>.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>AUTOGET</strong> = True</dl>
+
+<dl><dt><strong>CACHE_DIR</strong> = '/tmp'</dl>
+
+<dl><dt><strong>DBPEDIA_filename</strong> = 'labels_nl.nt.bz2'</dl>
+
+<dl><dt><strong>DBPEDIA_url</strong> = 'http://downloads.dbpedia.org/3.6/nl/'</dl>
+
+<dl><dt><strong>DEBUG</strong> = 1</dl>
+
+<dl><dt><strong>dbpedia_label</strong> = {'abstract': 'http://dbpedia.org/ontology/abstract', 'comment': 'http://www.w3.org/2000/01/rdf-schema#comment', 'deathcause': 'http://dbpedia.org/property/deathCause', 'deathplace': 'http://dbpedia.org/property/deathPlace', 'depiction': 'http://xmlns.com/foaf/0.1/depiction', 'dob': 'http://dbpedia.org/ontology/birthDate', 'dod': 'http://dbpedia.org/ontology/deathDate', 'geopoint': 'http://www.w3.org/2003/01/geo/wgs84_pos#geometry', 'givenname': 'http://xmlns.com/foaf/0.1/givenName', 'homepage': 'http://xmlns.com/foaf/0.1/homepage', ...}</dl>
+
+<dl><dt><strong>lang</strong> = 'nl'</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__licence__</strong> = 'GPL'</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#7799ee">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Author</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#7799ee"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Willem&nbsp;Jan&nbsp;Faber</td></tr></table>
+</body></html>
