@@ -1,0 +1,107 @@
+#tagall_search_box {
+	clear: both;
+	padding-top: 10px;
+	margin-bottom: 15px;
+	font-family: arial, sans;
+	font-size: 8pt;
+}
+.tagall_links,
+#tagall_search_result_tabs,
+#tagall_info_block,
+.tagall_result_window {
+	width: 250px;
+	font-family: arial, sans;
+	font-size: 8pt;
+}
+.tagall_links div {
+	clear: right;
+	margin-top: 4px;
+}
+.tagall_links div .tools {
+	float: right;
+	cursor: pointer;
+}
+
+
+.tagall_links .tagall_title {
+	font-weight: bold;
+	margin-top: 6px;
+	clear: both;
+}
+
+
+#tagall_search_results a,
+#tagall_search_result_tabs a,
+#tagall_info_block a {
+	color: blue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#tagall_search_results a.more_link {
+	clear: right;
+	float: right;
+	display: block;
+	margin: 5px;
+}
+
+#tagall_search_results a.less_link {
+	float: left;
+	display: block;
+	margin: 5px;
+}
+
+#tagall_search_result_tabs a.tagall_tab {
+	display: block;
+	width: 80px;
+	height: 20px;
+	float: left;
+	background-color: #ddd;
+}
+#tagall_search_result_tabs a.selected {
+	color: red;
+	background-color: #eee;
+}
+#tagall_search_result_tabs a.tagall_tab div {
+	margin-top: 5px;
+}
+#tagall_search_results .tagall_result_window {
+	clear: left;
+}
+#tagall_info_block {
+	clear: both;
+	width: 250px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #eee;
+	padding: 3px;
+	height: 180px;
+	overflow: auto;
+}
+#tagall_info_flags {
+	margin-top: 5px;
+}
+#tagall_info_header {
+	font-weight: bold;	
+	font-size: 10px;
+}
+
+#tagall_info_properties {
+	margin-top: 10px;
+}
+
+#tagall_info_properties dl {
+	margin: 0;
+}
+
+#tagall_info_properties dl dt {
+	font-weight: bold;
+	background-color: #ffd;
+}
+
+#tagall_info_properties dl dd {
+	padding: 0 0 10px 5px;
+	margin: 0;
+	background-color: #fee;
+	overflow: hidden;
+}

@@ -1,0 +1,79 @@
+{
+	"namespaces": {
+		"GEO": "http://sws.geonames.org/",
+		"DBP": "http://dbpedia.org/resource/",
+		"VIAF": "http://viaf.org/viaf/"
+	},
+	"info_namespaces": {
+		"DBP": ["http://dbpedia.org/data/", ".rdf"],
+		"VIAF": ["http://viaf.org/viaf/", "/rdf.xml"],
+		"GEO": ["http://sws.geonames.org/", "/about.rdf"]
+	},
+	"domains": {
+		"DBP":  [
+			"orgParam"
+		],
+		"VIAF": [
+			"personParam"
+		],
+		"GEO": [
+			"placeParam"
+		]
+	},
+	"domain_names": {
+		"personParam": "Persons",
+		"orgParam": "Miscelaneous",
+		"placeParam": "Places"
+	},
+	"prettyNames": {
+		"DBP": "Miscelaneous",
+		"VIAF": "Persons",
+		"GEO": "Places"
+	},
+	"search_domains": [
+		"DBP",
+		"VIAF",
+		"GEO"
+	],
+	"search": {
+		"DBP": {
+			"baseUrl": "http://lookup.dbpedia.org/api/search.asmx/KeywordSearch?",
+			"queryParam": "QueryString=",
+			"queryConcat": " ",
+			"startParam": null,
+			"maxParam": "MaxHits",
+			"personParam": "",
+			"orgParam": "",
+			"placeParam": "",
+			"info_stylesheet": "public/stylesheets/dbp_info2json.xsl",
+			"stylesheet": "public/stylesheets/dbp2json.xsl",
+			"start_correction": 0
+		},
+		"VIAF": {
+			"baseUrl": "http://viaf.org/viaf/search?httpAccept=application/rss%2bxml&sortKeys=holdingscount&",
+			"queryParam": "query=local.personalNames+all+",
+			"queryConcat": " ",
+			"startParam": "startRecord",
+			"maxParam": "maximumRecords",
+			"personParam": "",			
+			"placeParam": "",			
+			"orgParam": "",
+			"stylesheet": "public/stylesheets/viaf2json.xsl",
+			"info_stylesheet": "public/stylesheets/viaf_info2json.xsl",
+			"start_correction": 0
+		},
+		"GEO": {
+			"baseUrl": "http://api.geonames.org/search?lang=en&username=kbresearch&style=short&type=rdf&featureClass=A&featureClass=H&featureClass=P",
+			"queryParam": "name_equals=",
+			"queryConcat": " ",
+			"startParam": "",
+			"maxParam": "maxRows",
+			"personParam": "",			
+			"placeParam": "",			
+			"orgParam": "",
+			"stylesheet": "public/stylesheets/geo2json.xsl",
+			"info_stylesheet": "public/stylesheets/geo_info2json.xsl",
+			"start_correction": 0
+		}
+	}
+}

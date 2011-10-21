@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type: content=text/html; charset=utf-8" />
+<!--		<link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+
+		<script type="text/javascript" src="js/prototype.js"></script>
+		<script type="text/javascript" src="js/tagall.js"></script>
+		
+		<script type="text/javascript">
+			var tagall = new TagAllGlobal(
+ 				"<%= @identifier %>",
+				<%= @search_domains %>,
+				<%= @domain_names %>,
+				<%= @domains %>,
+				<%= @namespaces %>,
+				"container"
+			);
+
+			window.onload = function() {
+				tagall.start();
+			}
+		</script>
+	</head>
+	<body>
+	<div id="container">
+	</div>
+	</body>
+</html>

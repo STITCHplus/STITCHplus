@@ -1,0 +1,23 @@
+<html>
+	<head id="header">
+		<meta http-equiv="Content-Type: content=text/html; charset=utf-8" />
+		<script type="text/javascript" src="prototype.js"></script>
+		<script type="text/javascript">
+			function getIt(tagallInstanceUrl, url, container) {
+				tagall = null;
+				$('foo').innerHTML = "";
+				$('header').insert(new Element("script", {
+					"type": "text/javascript",
+					"src": tagallInstanceUrl + "?url=" + url + "&container=" + container + "&ts=" + (new Date().getTime())
+				}));
+			}
+
+		</script>
+
+	</head>
+	<body>
+		<button onclick="getIt('http://kbresearch.nl/general/tagall_jsonp', document.location.href, 'foo')">Tagall!!</button>
+		<div id="foo">
+		</div>
+	</body>
+</html>

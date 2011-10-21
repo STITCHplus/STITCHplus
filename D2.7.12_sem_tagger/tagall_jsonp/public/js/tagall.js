@@ -1,0 +1,519 @@
+/*
+#    global.js: Global scope javascript for tagall 
+#    For details see: http://opendatachallenge.kbresearch.nl/
+#    Copyright (C) 2011  R. van der Ark, Koninklijke Bibliotheek - National Library of the Netherlands
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+var TagAllFinder = Class.create({
+	initialize: function(namespace, domain) {
+		this.parameters = {
+			namespace: namespace,
+			domain: domain,
+			start: 1,
+			limit: 10,
+			query: ""
+		}
+		this.resultSets = [];
+		this.currentResultSet = 0;
+		this.numFound = 0;
+	},
+	searchFor: function(query) {
+		this.parameters.query = query;
+		this.parameters.start = 1;
+		this.doSearch();
+	},
+	addMoreLink: function() {
+		var resultWindow = $("tagall_" + this.parameters.namespace + "_" + this.parameters.domain);
+		if(resultWindow) {
+			var moreLink = resultWindow.childElements().detect(function(e) { return e.hasClassName("more_link") });
+			if(!moreLink) {
+				var currentFinder = this;
+				moreLink = new Element("a", {"class": "more_link"});
+				moreLink.insert("More &gt;&gt;");
+				resultWindow.insert(moreLink);
+				moreLink.observe("click", function(e) {
+					currentFinder.moreResults();
+				});
+			}
+		}
+	},
+	addLessLink: function() {
+		var resultWindow = $("tagall_" + this.parameters.namespace + "_" + this.parameters.domain);
+		if(resultWindow) {
+			var lessLink = resultWindow.childElements().detect(function(e) { return e.hasClassName("less_link") });
+			if(!lessLink) {
+				var currentFinder = this;
+				lessLink = new Element("a", {"class": "less_link"});
+				lessLink.insert("&lt;&lt; Back");
+				resultWindow.insert(lessLink);
+				lessLink.observe("click", function(e) {
+					currentFinder.backTrack();
+				});
+			}
+		}
+	},
+	dropLink: function(lclass) {
+		var resultWindow = $("tagall_" + this.parameters.namespace + "_" + this.parameters.domain);
+		if(resultWindow) {
+			var link = resultWindow.childElements().detect(function(e) { return e.hasClassName(lclass) });
+			if(link)
+				link.remove();
+		}
+	},
+	paginate: function() {
+		if(this.parameters.start < this.numFound)
+			this.addMoreLink();
+		else
+			this.dropLink("more_link");
+
+		if(this.parameters.start - 10 > 1)
+			this.addLessLink();
+		else
+			this.dropLink("less_link");
+	},
+	digestResults: function(resultSet) {
+		resultSet.render();
+		this.currentResultSet = this.resultSets.length;
+		this.resultSets.push(resultSet);
+		this.numFound = resultSet.numFound;
+		this.parameters.start += 10;
+		this.paginate();
+	},
+	backTrack: function() {
+		this.resultSets[--this.currentResultSet].render();
+		this.parameters.start -= 10;
+		this.paginate();
+	},
+	moreResults: function() {
+		if(this.resultSets.length - 1 > this.currentResultSet) {
+			this.resultSets[++this.currentResultSet].render();
+			this.parameters.start += 5;
+			this.paginate();
+		} else {
+			var resultDiv = $("tagall_" + this.parameters.namespace + "_" + this.parameters.domain).childElements().detect(function(e) { return e.hasClassName("results"); });
+			if(resultDiv) {
+				var spinner = resultDiv.childElements().detect(function(e) { return e.hasClassName("search_spinner"); });
+				resultDiv.childElements().each(Element.hide);
+				if(!spinner) {
+					spinner = new Element("img", {"src": "img/spinner.gif", "class": "search_spinner"});
+					resultDiv.insert(spinner);
+				} else
+					spinner.show();
+			}
+			this.doSearch();
+		}
+	},
+	doSearch: function() {
+		$('tagall_scripts').insert(new Element("script", {
+			"src": "http://kbresearch.nl/portal2/jsonp.php?callback=tagall.render_search_results&url=" + escape("http://dynamic.opendatachallenge.kbresearch.nl/find_by_params?" + Object.toQueryString(this.parameters))
+		}));
+	}
+});
+
+
+var TagAllLink = Class.create({
+
+	initialize: function(label, uri) {
+		this.label = label;
+		this.uri = uri;
+		this.url = this.uri;
+		for(ns in tagall.namespaces)
+			this.url = this.url.replace(ns + ":", tagall.namespaces[ns]);
+	},
+
+	render: function() {
+		if(!$(this.uri)) {
+			var newLink = new Element("div", {"id": this.uri});
+			var infoLink = new Element("a", {"href": this.url, "target": "_blank"});
+			var deleteLink = new Element("a");
+			var deleteImg = new Element("img", {"src": "img/delete.png", "class": "tools"});
+			deleteLink.insert(deleteImg);
+			infoLink.insert(this.label);
+			newLink.insert(deleteLink);
+			newLink.insert(infoLink);
+			$("tagall_user").insert(newLink);
+			var curLink = this;
+			deleteLink.observe("click", function(e) {
+				if(confirm("Are you sure you want to remove this tag?"))
+					curLink.drop()
+			});
+		}
+	},
+
+	drop: function() {
+		var delUri = this.uri;
+		$('tagall_scripts').insert(new Element("script", {
+			"type": "text/javascript",
+			"src": "http://kbresearch.nl/portal2/jsonp.php?url=" + 
+				escape("http://dynamic.opendatachallenge.kbresearch.nl/database/delete.py?" + Object.toQueryString({"url": tagall.identifier, "od": this.uri})) 
+		}));
+		$(delUri).remove();
+		tagall.links = tagall.links.reject(function(l) { return l.uri == delUri; });
+	}
+});
+
+var TagAllResultSet = Class.create({
+
+	initialize: function(json_results) {
+		this.docs = json_results.docs;
+		this.prettyName = json_results.pretty_name;
+		this.namespace = json_results.namespace;
+		this.domain = json_results.domain;
+		this.numFound = json_results.numFound;
+	},
+
+	render: function() {
+		if(this.docs && this.docs.length > 0) {
+			var resultWindow = this.addResultWindow();
+			this.addTab(resultWindow);
+			this.listDocs(resultWindow);
+			if(!$('tagall_disclaimer_' + this.namespace))
+				resultWindow.insert("<hr id='tagall_disclaimer_"+this.namespace+"' style='clear:both' /><i>" + tagall.disclaimers[this.namespace] + "</i>");
+			if(!tagall.showing_results) {
+				resultWindow.show();
+				$("tagall_" + this.namespace + "_tab").addClassName("selected");
+				tagall.showing_results = true;
+			}
+		}
+	},
+
+	addTab: function(resultWindow) {
+		if(!$("tagall_" + this.namespace + "_tab")) {
+			var tab = new Element("a", {"id": "tagall_" + this.namespace + "_tab", "class": "tagall_tab"});
+			var lbl = new Element("div");
+			lbl.insert(this.prettyName);
+			tab.insert(lbl);
+			$("tagall_search_result_tabs").insert(tab);
+			tab.observe("click", function(e) {
+				$$(".tagall_result_window").each(Element.hide);
+				$$(".tagall_tab").each(function(t) { t.removeClassName("selected"); });
+				tab.addClassName("selected");
+				resultWindow.show();
+			});
+		}
+	},	
+
+	addResultWindow: function() {
+		if(!$("tagall_"  + this.namespace + "_results")) {
+			var resultWindow = new Element("div", {"id": "tagall_" + this.namespace + "_results", "class": "tagall_result_window"});
+			$("tagall_search_results").insert(resultWindow);
+			resultWindow.hide();
+			return resultWindow;
+		} else
+			return $("tagall_" + this.namespace + "_results");
+	},
+
+	listDocs: function(resultWindow) {
+		var domainDiv = $("tagall_" + this.namespace + "_" + this.domain); 
+		if(!domainDiv) {
+			domainDiv = new Element("div", {"class": "tagall_links", "id": "tagall_" + this.namespace + "_" + this.domain});
+			var label = new Element("div", {"class": "tagall_title"});
+			label.insert(tagall.DOMAIN_NAMES[this.domain]);
+			domainDiv.insert(label);
+			resultWindow.insert(domainDiv);
+		}
+		var resultDiv = domainDiv.childElements().detect(function(e) { return e.hasClassName("results"); });
+		if(!resultDiv) {
+			resultDiv = new Element("div", {"class": "tagall_results"});
+			domainDiv.insert(resultDiv);
+		}
+		resultDiv.childElements().each(Element.remove);
+		this.docs.each(function(d) {
+			var docItem = new Element("div");
+			var docLink = new Element("a", {"title": d.label, "id": "target:" + d.uri});
+			var infoLink = new Element("a");
+			var infoImg = new Element("img", {"src": "img/information.png", "class": "tools"});
+			docLink.insert(d.label.substring(0, 34));
+			if(d.label.length > 34)
+				docLink.insert(" (...)");
+			infoLink.insert(infoImg);
+			docItem.insert(infoLink);
+			docItem.insert(docLink);
+			resultDiv.insert(docItem);
+			docLink.observe("click", function(e) {
+				if(confirm("Are you sure you want to add this tag?"))
+					tagall.add_link({"label": d.label, "uri": d.uri, "identifier": tagall.identifier});
+			});
+			infoLink.observe("click", function(e) {
+				tagall.get_info(d.uri);
+			});
+		});
+	}
+});
+
+var TagAllGlobal = new Class.create({
+	initialize: function(identifier, search_domains, domain_names, domains, namespaces, container_id) {
+		this.container_id = container_id;
+		this.showing_results = false;
+		this.last_query = null;
+		this.links = [];
+		this.finders = [];
+		this.domains = domains;
+		this.search_domains = search_domains;
+		this.namespaces = namespaces;
+		this.identifier = identifier;
+		this.DOMAIN_NAMES = domain_names;
+		this.disclaimers = {
+	    "GEO": "All locations are retrieved from <a target='_blank' href='http://www.geonames.org/'>Geonames</a>.",
+  	  "DBP": "All miscelaneous terms are retrieved from <a target='_blank' href='http://dbpedia.org/'>DBPedia</a>.",
+    	"VIAF": "All personal names are retrieved from <a target='_blank' href='http://viaf.org/'>Virtual Authority File</a> (OCLC)."
+		};
+	},
+
+	start: function() {
+		this.renderHTML();
+		$$('.tagall_search_spinner').each(Element.hide);
+		$('tagall_info_block').hide();
+		$('tagall_scripts').insert(new Element("script", {
+			"type": "text/javascript",
+			"src": "http://kbresearch.nl/portal2/jsonp.php?callback=tagall.load_links&url=" + 
+				escape("http://dynamic.opendatachallenge.kbresearch.nl/database/retrieve.py?url=" + this.identifier) + 
+				"&ts=" + (new Date().getTime())
+		}));
+
+		this.load_finders();
+		this.links.each(function(l) { l.render() });
+	},
+
+	renderHTML: function() {
+		var _this = this
+		var container = $(this.container_id);
+		var linksDiv = new Element("div", {
+			"id": "tagall_links",
+			"class": "tagall_links"
+		});
+		var linksTitleDiv = new Element("div", { "class": "tagall_title"});
+		linksTitleDiv.insert("Tags");
+		linksDiv.insert(linksTitleDiv);
+		linksDiv.insert(new Element("div", {"id": "tagall_user"}));
+		container.insert(linksDiv);
+
+		var searchDiv = new Element("div", {"id": "tagall_search_box"});
+		var input = new Element("input", {
+			"id": "tagall_q",
+			"type": "text"
+		});
+		input.observe("change", function(e) { _this.send_on_return(e) });
+		var button = new Element("button");
+		button.insert("Search");
+		button.observe("click", function(e) { _this.send_searches($('tagall_q').value) });
+		searchDiv.insert(input);
+		searchDiv.insert(button);
+		container.insert(searchDiv);
+
+		var infoDiv = new Element("div", {"id": "tagall_info_block"});
+		var closeLink = new Element("a", {"style": "float: right"});
+		closeLink.observe("click", function(e) {
+			$('tagall_info_block').hide(); 
+			$('tagall_search_results').show(); 
+			$('tagall_search_result_tabs').show();
+		});
+		closeLink.insert("close");
+		infoDiv.insert(closeLink);
+		infoDiv.insert(new Element("div", {"id": "tagall_info_header"}));
+		infoDiv.insert(new Element("div", {"id": "tagall_info_flags"}));
+		infoDiv.insert(new Element("div", {"id": "tagall_info_add", "style": "margin-top: 5px"}));
+		infoDiv.insert(new Element("img", {
+			"src": "img/spinner.gif",
+			"id": "tagall_info_spinner",
+			"class": "tagall_search_spinner"
+		}));
+		infoDiv.insert(new Element("div", {"id": "tagall_info_properties"}));
+		container.insert(infoDiv);
+
+		container.insert(new Element("div", {"id": "tagall_search_result_tabs" }));
+		var resultsDiv = new Element("div", {"id": "tagall_search_results"});
+		resultsDiv.insert(new Element("img", {
+			"src": "img/spinner.gif",
+			"id": "tagall_search_spinner",
+			"class": "tagall_search_spinner"
+		}));
+		container.insert(resultsDiv);
+
+		container.insert(new Element("div", {"id": "tagall_scripts"}));
+
+		$$('//head')[0].insert(new Element("link", {
+			"rel": "stylesheet",
+			"type": "text/css",
+			"href": "css/style.css"
+		}));
+	},
+
+	add_link: function(params) {
+		for(var ns in this.namespaces) 
+			params["uri"] = params["uri"].replace(this.namespaces[ns], ns + ":");
+	
+		var storeParams = {
+			"url": params["identifier"],
+			"label": params["label"],
+			"od": params["uri"]
+		};
+
+		$('tagall_scripts').insert(new Element("script", {
+			"type": "text/javascript",
+			"src": "http://kbresearch.nl/portal2/jsonp.php?url=" + 
+				escape("http://dynamic.opendatachallenge.kbresearch.nl/database/store.py?" + Object.toQueryString(storeParams)) 
+		}));
+		var link = new TagAllLink(params.label, params.uri);
+		link.render();
+		this.links.push(link);
+	},
+
+	load_links: function(json_links) {
+	this.links = [];
+	for(var x in json_links) 
+		this.links.push(new TagAllLink(json_links[x].label, x));
+	this.links.each(function(l) { l.render() });
+	},
+
+	load_finders: function() {
+		var _this = this;
+		this.search_domains.each(function(ns) {
+			_this.domains[ns].each(function(domain) {
+				_this.finders.push(new TagAllFinder(ns, domain));
+			});
+		});
+	},
+
+	get_info: function(uri) {
+		$('tagall_info_block').show();
+		$('tagall_info_spinner').show();
+		$('tagall_info_header').hide();
+		$('tagall_info_add').hide();
+		$('tagall_info_flags').hide();
+		$('tagall_info_properties').hide();
+		$('tagall_search_results').hide();
+		$('tagall_search_result_tabs').hide();
+		for(ns in this.namespaces)
+			uri = uri.replace(this.namespaces[ns], ns + ":");
+
+		this.requested_info_uri = uri;
+		$('tagall_scripts').insert(new Element("script", {
+			"src": "http://kbresearch.nl/portal2/jsonp.php?callback=tagall.render_info&url=" + escape("http://dynamic.opendatachallenge.kbresearch.nl/info/" + uri.replace("/", ""))
+		}));
+	},
+
+	render_info: function(info, uri) {
+		var labelEmpty, propEmpty;
+		$('tagall_info_spinner').hide();
+		if(!(labelEmpty = this.isEmpty(info.label))) {
+			$('tagall_info_header').innerHTML = "";
+			$('tagall_info_flags').innerHTML = "";
+			$('tagall_info_properties').innerHTML = "";
+			$('tagall_info_add').innerHTML = "";
+			if(info.thumbnail) 
+				$('tagall_info_properties').insert(new Element("img", {"src": info.thumbnail, "style": "width: 80px; float: right"}));
+
+			["en", "ja", "fr", "zh", "de", "ru", "nl", "il", "ar"].each(function(lang) {
+				if(info.label && info.label[lang]) {
+					var langLabel = new Element("div", {"id": "tagall_info_label_" + lang, "class": "tagall_info_label"});
+					var langLink = new Element("a");
+					var langImg = new Element("img", {"src": "img/flags/" + lang + ".png"});
+					langLabel.insert(info.label[lang]);
+					$('tagall_info_header').insert(langLabel);
+					langLabel.hide();
+
+					langLink.insert(langImg);
+					$('tagall_info_flags').insert(langLink);
+					langLink.observe("mouseover", function(e) {
+						$$('.tagall_info_label').each(Element.hide);
+						$('tagall_info_label_' + lang).show();
+					});
+				}
+				if($('tagall_info_label_en'))
+					$('tagall_info_label_en').show();
+				else if($$('.tagall_info_label').length > 0)
+					$$('.tagall_info_label')[0].show()
+			});
+			$('tagall_info_header').show();
+			$('tagall_info_flags').show();
+			var addLink = new Element("a");
+			addLink.insert("Add this tag");	
+			$('tagall_info_add').insert(addLink);
+			$('tagall_info_add').show();
+			var _this = this;
+			addLink.observe("click", function(e) {
+				if(confirm("Are you sure you want to add this tag?")) {
+					_this.add_link({
+						"identifier": _this.identifier,
+						"uri": (uri ? uri : _this.requested_info_uri),
+						"label": (info.label["en"] ? info.label["en"] : info.properties["name"])
+					});
+				}
+			});
+		}
+
+		if(!(propEmpty = this.isEmpty(info.properties))) {
+			var defList = new Element("dl");
+			for(prop in info.properties) {
+				var dt = new Element("dt");
+				var dd = new Element("dd");
+				dt.insert(prop);
+				dd.insert(info.properties[prop]);
+				defList.insert(dt);
+				defList.insert(dd);
+			}
+			$('tagall_info_properties').insert(defList);
+			$('tagall_info_properties').show();
+		}
+		if(labelEmpty && propEmpty) {
+			$('tagall_info_header').innerHTML = "<i>information could not be retrieved from remote site</i>";
+			$('tagall_info_header').show();
+		}
+	},
+
+	isEmpty: function(obj) {
+		for(var prop in obj) {
+			if(obj.hasOwnProperty(prop))
+				return false;
+		}
+		return true;
+	},
+
+	send_searches: function(query) {
+		$('tagall_info_block').hide();
+		$('tagall_search_results').show();
+		$('tagall_search_result_tabs').show();
+		if(query != this.last_query && query != "") {
+			this.showing_results = false;
+			$$(".tab").each(Element.remove);
+			$$(".result_window").each(function(e) { 
+				e.childElements().each(Element.remove);
+				e.hide();
+			});
+			$('tagall_search_spinner').show();
+			this.finders.each(function(finder) {
+				finder.searchFor(query);
+			});
+		}
+		this.last_query = query;
+	},
+
+	send_on_return: function(e) {
+		if(e.keyCode == 13)
+			this.send_searches($('tagall_q').value);
+	},
+
+	render_search_results: function(result_json) {
+		$$('.tagall_search_spinner').each(Element.hide);
+		var resultSet = new TagAllResultSet(result_json);
+		var finder = this.finders.detect(function(f) {
+			return f.parameters.namespace == resultSet.namespace;
+		});
+		finder.digestResults(resultSet);
+	}
+});

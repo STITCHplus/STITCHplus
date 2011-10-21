@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:gn="http://www.geonames.org/ontology#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+  <gn:Feature rdf:about="http://sws.geonames.org/2759794/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/2759794/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/2759793/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/2759793/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Gemeente Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5107152/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5107152/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022857/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022857/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1547220/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1547220/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Île Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022856/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022856/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/3781595/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/3781595/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/4179700/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/4179700/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/4374800/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/4374800/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/4505240/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/4505240/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/4744357/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/4744357/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5095182/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5095182/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5145733/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5145733/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5178270/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5178270/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5323799/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5323799/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5584007/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5584007/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5637141/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5637141/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/5884628/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/5884628/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/3379847/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/3379847/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022858/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022858/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022859/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022859/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022860/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022860/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022861/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022861/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022862/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022862/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022863/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022863/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022864/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022864/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022865/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022865/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022866/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022866/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022867/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022867/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022868/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022868/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022869/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022869/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022870/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022870/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022871/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022871/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022872/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022872/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022873/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022873/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022874/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022874/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022875/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022875/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/1022876/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/1022876/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/3379846/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/3379846/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/3379848/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/3379848/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/4846873/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/4846873/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+  <gn:Feature rdf:about="http://sws.geonames.org/6471339/">
+    <rdfs:isDefinedBy>http://sws.geonames.org/6471339/about.rdf</rdfs:isDefinedBy>
+    <gn:name>Amsterdam</gn:name>
+  </gn:Feature>
+</rdf:RDF>
