@@ -18,4 +18,4 @@ http://dynamic.opendatachallenge.kbresearch.nl/database/delete.py
 http://dynamic.opendatachallenge.kbresearch.nl/database/store.py
 
 Please set up your own storage mechanism and endpoint for continual use
-For an example see: 
+For an example see: https://github.com/STITCHplus/STITCHplus/tree/master/D2.7.12_sem_tagger/store_and_retrieve_example 
