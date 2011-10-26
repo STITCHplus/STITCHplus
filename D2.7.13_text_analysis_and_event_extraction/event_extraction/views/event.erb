@@ -1,0 +1,36 @@
+<html>
+	<body style="font-family: arial, sans; font-size: 10pt">
+			
+		<dl>
+			<% @results.each_with_index do |result, ind| %>
+				<dt style="clear: right"><%= result[:date] %> (<a href="/general/events/visual/?url=<%= CGI::escape(result[:id]) %>&event_words=<%=CGI::escape(params[:event_words]) %>&analyzer=<%= params[:analyzer] %>">visual</a>)</dt>
+				<dd style="margin-bottom: 10px">
+					<div id="info_<%= ind %>" style="float: right; border: 1px solid; width: 250px; height: 100px;">
+						&nbsp;
+					</div>
+					<% skip = 0%>
+					<% result[:tokens].each_with_index do |token, i| %>
+						<% result[:ranges].each do |range| %>
+							<% if range[:start_index] == i %>
+								<b onmouseover="document.getElementById('info_<%= ind %>').innerHTML = '<%= range[:link] ? range[:link].map.join('<br />') : "" %>';" style="color: <%= range[:link] ? "green" : "red" %>"><%= CGI::escapeHTML(range[:words].sort{|a, b| b.length <=> a.length}.first) %></b>
+								<% skip = range[:end_index] - range[:start_index] %>
+								<% break %>
+							<% end %>
+						<% end %>
+						<% result[:event_indexes].each do |ev_ind| %>
+							<% if ev_ind[0] == i %>
+								<i style="color: blue"><%= CGI::escapeHTML(params[:event_words]) %></i>
+								<% skip = ev_ind[1] - ev_ind[0] + 1 %>
+							<% end %>
+						<% end %>
+						<%= CGI::escapeHTML(token["token"]) if skip == 0 %>
+						<% skip -= 1 if skip > 0 %>
+					<% end %>
+				</dd>
+			<% end %>
+		</dl>
+		<% if @numfound > params[:start].to_i %>
+			<a href="/general/events/event?<%= params.reject{|k,v| k.to_s == "start"}.map{|k,v| "#{k.to_s}=#{v}"}.join("&") %>&start=<%= params[:start].to_i + params[:rows].to_i %>">meer</a>
+		<% end %>
+	</body>
+</html>

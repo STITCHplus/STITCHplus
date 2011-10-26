@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<style type="text/css">
+			.token {
+				position: absolute;
+				background-color: white;
+				opacity:0;
+				filter:alpha(opacity=0);
+			}
+			.token.blurred {
+				opacity:0.8;
+				filter:alpha(opacity=80);
+			}
+			.token.inevent {
+				background-color: blue;
+				opacity:0.4;
+				filter:alpha(opacity=40);
+				border-bottom: 1px solid black;
+			}
+		</style>
+		<script type="text/javascript" src="/general/events/js/prototype.js"></script>
+		<script type="text/javascript">
+			var view = null;
+			var img = new Image();
+			var isIE = !!window.attachEvent && !isOpera;
+			var isOpera = Object.prototype.toString.call(window.opera) == '[object Opera]';
+			var tokens_in_event = [];
+			var tokens_in_range = [];
+			var token_divs = [];
+
+			function wait_for_image() {
+				if(img && img.complete)
+					initialize();
+				else
+					window.setTimeout("wait_for_image()", 200);
+			}
+
+			function initialize() {
+				document.getElementById("image_block").src = img.src;
+				document.getElementById("image_block").style.width = (img.width / 4) + "px";
+				for(i in view.tokens) {
+					var x  = new Element("div", {
+						"class": "token",
+						"style": 
+							"top:" + (view.tokens[i].y/2) +  "; " +
+							"left:" + (view.tokens[i].x/2) +  "; " +
+							"width:" + (view.tokens[i].w/2) +  "; " +
+							"height:" + (view.tokens[i].h/2) +  "; "
+					});
+					x.observe("mouseover", dohighlights);
+					x.observe("mouseout", donthighlight);
+					token_divs[i] = x;
+					view.ranges.each(function(range) {
+						if(i >= range.start_index && i < range.end_index) 
+							tokens_in_range.push(i);
+					});
+
+					view.event_indexes.each(function(event_index) {
+						if(i >= event_index[0] && i <= event_index[1])
+							x.addClassName("inevent");
+					});
+
+					$('bod').insert(x);
+				}
+			}
+
+			function dohighlights() {
+				this.style.cursor = "pointer";
+				for(t in token_divs) {
+					if(tokens_in_range.indexOf(t) > -1 || tokens_in_event.indexOf(t) > -1)
+						;
+					else
+						token_divs[t].addClassName("blurred");
+				};
+			}
+
+			function donthighlight() {
+				$$('.token').each(function(t) {
+					t.removeClassName("blurred");
+				});
+			}
+
+			function setsub(word) {
+				socket.postMessage(word);
+			}
+
+			window.onload = function() {
+				view = <%= @view %>;
+				img.src = view.id;
+				wait_for_image();
+			}
+		</script>
+	</head>
+	<body id="bod">
+		<img id="image_block" style="position: absolute; top: 0; left: 0;" />
+		<div id="info_block" style="float: left; width: 400px">
+		</div>
+	</body>
+</html>

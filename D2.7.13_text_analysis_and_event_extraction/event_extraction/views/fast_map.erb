@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<script src="/general/events/js/prototype.js"></script>
+	  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+  	<script>
+			var curLocation = {"lat": 0.0, "long": 0.0};
+			var destination = null;
+			var events = <%= @events %>;
+			var map = null;
+		  var zoom = 2;
+			var markers = null;
+			var curMarker = oldMarker = null;
+
+			function logEvents() {
+				if(events.length > 0) {
+					var curEvent = events.pop();
+
+					new Ajax.Request("/general/events/data/" + curEvent.place + "?label", {
+						method: "get",
+						onSuccess: function(r) { 
+							if(curMarker && oldMarker) {
+								markers.removeMarker(curMarker);
+								markers.addMarker(oldMarker);
+							}
+							$('place_name').innerHTML = "";
+							var lbl = r.responseText.evalJSON()["label_nl"];
+							if(lbl == null || lbl == "") lbl = r.responseText.evalJSON()["label_en"];
+							$('place_name').insert(lbl);
+							$('date').innerHTML = "";
+							$('date').insert(curEvent.date);
+				  	  var lonLat = new OpenLayers.LonLat(curEvent.location["long"], curEvent.location["lat"]).transform(
+  		          new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+    		        map.getProjectionObject() // to Spherical Mercator Projection
+        		  );
+							var icon = new OpenLayers.Icon('http://www.openlayers.org/dev/img/marker.png');
+							var icon1 = new OpenLayers.Icon('/general/related_search/extlink.png');
+							curMarker = new OpenLayers.Marker(lonLat, icon);
+							oldMarker = new OpenLayers.Marker(lonLat, icon1);
+				  	  markers.addMarker(curMarker);
+							destination = curEvent.location;
+							flyToPoint();
+//		  		  	map.setCenter(lonLat);
+						}
+					});
+
+				}
+			}
+
+			function flyToPoint() {
+				var direction = {
+  		    "long": 0.0,
+	    	  "lat": 0.0
+        }
+
+				if(curLocation == null) {				
+					curLocation = destination;
+				} else {
+					direction = {
+						"long": curLocation["long"] - destination["long"],
+						"lat": curLocation["lat"] - destination["lat"]
+					}
+					curLocation["long"] -= direction["long"] / 20.0;
+					curLocation["lat"] -= direction["lat"] / 20.0;
+				}
+	  	  var dest = new OpenLayers.LonLat(curLocation["long"], curLocation["lat"]).transform(
+          new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+          map.getProjectionObject() // to Spherical Mercator Projection
+   		  );
+ 		  	map.setCenter(dest);
+				if(direction["long"] < 1.0 && direction["long"] > -1.0 && direction["lat"] < 1.0 && direction["lat"] > -1.0) {
+					logEvents();
+				} else {
+					window.setTimeout(flyToPoint, 10);
+				}
+			}
+
+			window.onload = function() {
+				new Ajax.Request("/general/events/data/<%= params[:identifier] %>?prefLabel", {
+					method: "get",
+					onSuccess: function(r) {$('event_label').insert(r.responseText.evalJSON().preflabel + " in:") }
+				});
+		    map = new OpenLayers.Map("mapdiv");
+  	  	map.addLayer(new OpenLayers.Layer.OSM());
+    		markers = new OpenLayers.Layer.Markers( "Markers" );
+  	  	map.addLayer(markers);
+				logEvents();
+			}
+  	</script>
+	</head>
+
+	<body>
+		<b id="event_label"></b>
+		<span id="place_name"></span>
+		<span id="date"></span>
+  	<div id="mapdiv">
+		</div>
+
+	</body>
+</html>

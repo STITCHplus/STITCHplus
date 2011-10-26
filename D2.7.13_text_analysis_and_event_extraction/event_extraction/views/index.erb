@@ -1,0 +1,22 @@
+<html>
+	<body>
+
+		<form id="bar" action="/general/events/event" method="get">
+			<label>Zoekterm</label>
+			<input type="text" name="event_words" value="overstromingen in" /><br />
+			<label>Formaat</label>
+			<input type="radio" value="json" name="format" />JSON
+			<input type="radio" value="html" name="format" />HTML<br />
+			<input type="radio" value="map" name="format" checked />Wereldkaart<br />
+			<label>Analyzer</label>
+			<input type="radio" value="openNLP" name="analyzer" />OpenNLP
+			<input type="radio" value="naiveNE" name="analyzer" checked />Hoofdletters<br />
+			<label>Aantal resultaten</label>
+			<select name="rows">
+				<%= (1..50).to_a.map{|v| "<option value=\"#{v}\" #{"selected" if v == 5}>#{v}</option>"}.join("\n") %>
+			</select>
+			<input type="submit" value="Zoek" />
+		</form>
+
+	</body>
+</html>

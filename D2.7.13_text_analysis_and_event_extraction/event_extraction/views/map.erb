@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<script src="/general/events/js/prototype.js"></script>
+	  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+  	<script>
+			var results = <%= @results %>;
+			var events = [];
+			var map = null;
+		  var zoom = 5;
+			var markers = null;
+
+			function pushEvent(eventDoc, place, latlong) {
+				var ev = {
+					"date": eventDoc["date"],
+					"id": eventDoc["id"],
+					"place_words": place,
+					"latlong": latlong
+				};
+				if(!events.detect(function(e) { e["id"] == ev["id"] })) {
+					events.push(ev);
+					events = events.sortBy(function(e) { return e["date"] }).reverse();
+				}
+			}
+
+			function getEventLatLong(result, words, identifier) {
+				var identifier = identifier.replace("http://dbpedia.org/resource/", "GGC-THES:DBP:").replace("_(disambiguation)", "");
+				new Ajax.Request("/general/events/lat_long/?identifier=" + identifier, {
+					method: "get",
+					onSuccess: function(r) {
+						var latlong = r.responseText.evalJSON();
+						if(latlong.length > 0)
+							pushEvent(result, words, latlong);
+					}
+				});
+			}
+
+			function logEvents() {
+				if(events.length > 0) {
+					var curEvent = events.pop();
+					$('place_name').innerHTML = "";
+					$('place_name').insert(curEvent.place_words[0]);
+					$('date').innerHTML = "";
+					$('date').insert(curEvent.date);
+ 
+		  	  var lonLat = new OpenLayers.LonLat(curEvent.latlong[1], curEvent.latlong[0]).transform(
+  	          new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+    	        map.getProjectionObject() // to Spherical Mercator Projection
+          );
+		  	  markers.addMarker(new OpenLayers.Marker(lonLat)); 
+	  	  	map.setCenter (lonLat, zoom);
+				}
+				window.setTimeout(logEvents, 3000);
+			}
+
+			window.onload = function() {	
+				results.each(function(result) {
+					result.ranges.select(function(r) {
+						return r.link != null && r.link.dbp != null && r.proximity != null && r.proximity > 0;
+					}).sortBy(function(r) { 
+						return r.proximity;
+					}).each(function(r) {
+						getEventLatLong(result, r.words, r.link.dbp[0]);
+					})
+				});
+		    map = new OpenLayers.Map("mapdiv");
+  	  	map.addLayer(new OpenLayers.Layer.OSM());
+    		markers = new OpenLayers.Layer.Markers( "Markers" );
+  	  	map.addLayer(markers);
+
+				window.setTimeout(logEvents, 3000);
+			}
+  	</script>
+	</head>
+
+	<body>
+		<b><%= params[:event_words] %>: </b>
+		<span id="place_name"></span>
+		<span id="date"></span>
+  	<div id="mapdiv" style="width: 50%; height: 50%">
+		</div>
+
+	</body>
+</html>
