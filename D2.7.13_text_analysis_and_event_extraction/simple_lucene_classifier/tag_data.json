@@ -1,0 +1,1452 @@
+[
+    {
+        "_id": {
+            "$oid": "4e37be6a4eae3531e9000000"
+        }, 
+        "label": "People\u2019s Republic of China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1963:03:17:17:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37be9a4eae3531f6000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1954:01:16:64:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37beb04eae35320b000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1964:12:17:100:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37becc4eae353217000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:09:08:94:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37bee84eae353223000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1968:04:29:41:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37bf034eae353360000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1971:01:05:99:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37bf204eae35336c000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1954:12:28:19:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37bf3f4eae353378000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1955:09:21:89:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37bf534eae353384000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1951:04:23:6:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e37bf684eae353390000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1951:05:21:50:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39422a4eae35090b000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:24:6:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3942384eae350918000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1968:05:09:60:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3942434eae350924000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:12:21:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3942704eae350932000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:16:7:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3942804eae35093e000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:10:21:52:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39433e4eae350a93000000"
+        }, 
+        "label": "China", 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:08:18:28:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3960f34eae352a7d000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1949:09:22:12:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3961184eae352a8f000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1952:10:07:68:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3961244eae352a9b000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1950:05:07:67:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39612f4eae352aa7000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1953:01:13:29:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39613e4eae352ab3000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1953:05:01:9:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39614c4eae352bee000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1949:12:16:44:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3961594eae352bfb000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1953:02:16:47:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3961644eae352c07000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1960:05:19:35:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39616f4eae352c13000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1950:12:15:33:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39617d4eae352c25000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1951:06:20:80:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3966c34eae35318e000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1983:12:23:58:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3966ce4eae35319a000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1983:12:23:137:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3966de4eae3531b2000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1963:08:07:46:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3966ea4eae3531be000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1964:09:05:61:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3966f64eae3531ca000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1969:12:09:115:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39673f4eae353308000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1984:04:19:121:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3967484eae353314000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1976:11:25:19:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3967534eae353320000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1983:01:06:122:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3967634eae35332c000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1983:04:06:88:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39676d4eae353338000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1984:02:22:9:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3967764eae353344000000"
+        }, 
+        "label": "Cold War", 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1961:03:30:77:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969554eae353487000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1966:12:12:24:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969614eae353493000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1969:01:17:79:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e39698c4eae3535cf000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1981:10:14:7:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969964eae3535db000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1959:06:15:81:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969aa4eae3535e7000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1968:04:23:35:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969b64eae3535f3000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1968:04:23:97:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969c24eae3535ff000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1969:05:06:112:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969cf4eae35360b000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:06:19:84:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969d84eae353617000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1953:09:22:23:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969e84eae353624000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1953:04:22:61:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969f04eae353630000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:11:20:131:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e3969f94eae35363c000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1950:10:11:37:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e396a034eae353648000000"
+        }, 
+        "label": "Hunger", 
+        "od": "DBP:Hunger", 
+        "url": "anp:1957:04:21:52:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000001"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1963:07:25:43:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000002"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1952:10:07:75:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000003"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1953:09:16:3:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000004"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1964:01:03:79:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000005"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1949:04:30:35:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000006"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1972:05:17:28:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000007"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1980:03:20:26:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000008"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1980:03:20:42:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000009"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1963:12:22:59:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200000a"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1973:03:22:139:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200000b"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1950:05:04:50:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200000c"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1952:10:17:51:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200000d"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1982:01:03:73:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200000e"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1961:07:13:78:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200000f"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1952:12:06:33:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000010"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1979:12:09:48:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000011"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1950:02:07:75:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000012"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1956:05:01:67:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000013"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1960:01:28:15:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000014"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1960:02:22:35:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000015"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1969:03:29:4:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000016"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1971:01:28:84:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000017"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1972:12:26:39:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000018"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1973:03:22:119:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000019"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1973:03:22:122:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200001a"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1973:03:22:52:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200001b"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1958:01:23:36:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200001c"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1980:07:06:7:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200001d"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1980:07:06:85:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200001e"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1980:07:06:94:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200001f"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1948:06:11:6:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000020"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1953:04:17:7:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000021"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1955:06:24:31:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000022"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1960:06:21:24:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000023"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1961:10:21:63:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000024"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1961:03:19:10:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000025"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1963:12:23:10:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000026"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1973:07:05:150:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000027"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1980:07:06:2:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000028"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1954:07:09:59:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000029"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1959:05:06:9:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200002a"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1956:01:29:31:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200002b"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1955:05:15:36:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200002c"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1957:04:23:63:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200002d"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1956:01:27:60:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200002e"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1972:11:13:80:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c8695200002f"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1949:02:09:23:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000030"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1976:03:14:36:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000031"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1954:01:06:56:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c63d1d41c86952000032"
+        }, 
+        "od": "DBP:Cold_War", 
+        "url": "anp:1962:12:03:87:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000033"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1968:04:23:102:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000034"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1978:06:03:76:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000035"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1967:04:30:64:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000036"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1966:05:04:69:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000037"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1968:09:24:9:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000038"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1968:09:24:70:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000039"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:08:08:52:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200003a"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1977:11:01:29:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200003b"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1958:03:23:50:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200003c"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:08:08:31:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200003d"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1984:01:28:142:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200003e"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1962:04:14:27:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200003f"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1966:05:11:88:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000040"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1961:01:25:36:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000041"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1977:11:01:92:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000042"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1984:03:05:107:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000043"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1975:06:16:25:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000044"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1983:08:03:26:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000045"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1984:03:05:52:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000046"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1984:03:05:66:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000047"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1974:07:29:15:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000048"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1975:06:05:112:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000049"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1968:04:23:101:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200004a"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1964:12:27:49:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200004b"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1966:12:12:48:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200004c"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1974:10:19:72:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200004d"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1966:09:21:58:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200004e"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:10:28:47:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200004f"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1974:10:19:59:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000050"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:11:08:84:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000051"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1974:12:17:105:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000052"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1983:08:03:132:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000053"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1983:08:03:36:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000054"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1963:07:06:18:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000055"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1975:05:26:18:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000056"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1979:09:19:16:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000057"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1984:05:30:76:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000058"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1970:07:16:115:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000059"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1963:03:21:57:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200005a"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1984:01:28:17:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200005b"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1984:01:28:5:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200005c"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:10:28:110:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200005d"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:05:24:175:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200005e"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:05:24:66:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c8695200005f"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1974:10:19:148:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000060"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1958:01:24:75:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000061"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:10:29:1:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000062"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:06:05:114:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000063"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1973:06:05:125:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c6451d41c86952000064"
+        }, 
+        "od": "DBP:Hunger", 
+        "url": "anp:1970:08:18:72:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000065"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:02:7:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000066"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1960:03:17:61:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000067"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:20:46:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000068"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:10:09:6:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000069"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:05:31:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200006a"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:25:30:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200006b"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:09:31:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200006c"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:29:38:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200006d"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:01:16:35:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200006e"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:23:53:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200006f"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:10:30:10:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000070"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:02:20:2:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000071"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:13:26:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000072"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:05:24:54:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000073"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1937:08:30:2:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000074"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1951:01:01:5:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000075"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:09:30:73:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000076"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:01:12:118:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000077"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1976:10:30:44:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000078"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:13:12:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000079"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:26:42:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200007a"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:02:36:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200007b"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:15:32:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200007c"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:01:11:18:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200007d"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1979:08:21:129:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200007e"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1979:08:21:121:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200007f"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:18:41:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000080"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:05:12:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000081"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:05:24:9:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000082"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:08:29:41:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000083"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:09:25:22:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000084"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1956:08:24:26:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000085"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:26:52:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000086"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:06:20:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000087"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:09:54:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000088"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:29:24:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000089"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:20:71:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200008a"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:26:6:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200008b"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:02:02:46:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200008c"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:01:11:33:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200008d"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1957:01:13:41:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200008e"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1967:01:11:108:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c8695200008f"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:04:30:47:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000090"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:05:07:46:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000091"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1976:10:21:80:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000092"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:03:12:40:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000093"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1954:02:15:11:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000094"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:11:15:38:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000095"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1980:11:20:51:mpeg21"
+    }, 
+    {
+        "_id": {
+            "$oid": "4e89c64c1d41c86952000096"
+        }, 
+        "od": "GEO:1814991/", 
+        "url": "anp:1949:02:05:43:mpeg21"
+    }
+]
