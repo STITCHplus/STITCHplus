@@ -15,4 +15,7 @@ We used the Alpino trained:
  nl-sent.bin
  nl-ner-*.bin
 
+For more details on Alpino, see:
+http://www.let.rug.nl/vannoord/alp/Alpino/
+
 See source of NLPServlet.java for more details
