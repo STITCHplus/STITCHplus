@@ -6,3 +6,5 @@ http://kbresearch.nl/general/events/
 
 Or see the demo result map for 'tornados in' - query
 http://kbresearch.nl/general/events/fast_map/GGC-THES:AC:078958350
+
+.. image:: https://github.com/STITCHplus/STITCHplus/raw/master/D2.7.13_text_analysis_and_event_extraction/event_extraction/snapshot.png
