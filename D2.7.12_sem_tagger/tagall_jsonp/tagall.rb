@@ -59,7 +59,7 @@ set :public, File.dirname(__FILE__) + "/public"
 get '/add_link' do
 	content_type "text/javascript", 'charset' => "utf-8"
 	new_params = params.reject{|k,v| k == "callback"}
- 	get = SimpleGetResponse.new("http://dynamic.opendatachallenge.kbresearch.nl/database/store.py?" + new_params.map{|k,v| "#{k}=#{CGI.escape(v)}"}.join("&")) 
+ 	get = SimpleGetResponse.new("#{conf["od_storage"]["add"]}?" + new_params.map{|k,v| "#{k}=#{CGI.escape(v)}"}.join("&")) 
 	if get.success?
 		if params[:callback]
 			return "#{params[:callback]}(#{JSON new_params});"
@@ -74,7 +74,7 @@ end
 get '/delete_link' do
 	content_type "text/javascript", 'charset' => "utf-8"
   new_params = params.reject{|k,v| k == "callback"}
-  get = SimpleGetResponse.new("http://dynamic.opendatachallenge.kbresearch.nl/database/delete.py?" + new_params.map{|k,v| "#{k}=#{CGI.escape(v)}"}.join("&"))
+  get = SimpleGetResponse.new("#{conf["od_storage"]["delete"]}?" + new_params.map{|k,v| "#{k}=#{CGI.escape(v)}"}.join("&"))
   if get.success?
     if params[:callback]
       return "#{params[:callback]}(#{JSON new_params});"
@@ -88,7 +88,7 @@ end
 
 get '/retrieve_links' do
 	content_type "text/javascript", 'charset' => "utf-8"
-	get = SimpleGetResponse.new("http://dynamic.opendatachallenge.kbresearch.nl/database/retrieve.py?url=#{params[:id] || params[:url]}")
+	get = SimpleGetResponse.new("#{conf["od_storage"]["retrieve"]}?url=#{params[:id] || params[:url]}")
 	if get.success?
 		if params[:callback]
 			return "#{params[:callback]}(#{get.body});"
@@ -145,7 +145,7 @@ end
 # Renders the index action in 'views/index.erb'
 get '/' do
 	content_type "text/javascript", 'charset' => "utf-8"
-	@base_url = "http://kbresearch.nl/general/tagall_jsonp" 
+	@base_url = "http://" + request.host_with_port #"http://kbresearch.nl/general/tagall_jsonp" 
 	@namespaces = JSON conf["namespaces"]
 	@domain_names = JSON conf["domain_names"]
 	@search_domains = JSON conf["search_domains"]

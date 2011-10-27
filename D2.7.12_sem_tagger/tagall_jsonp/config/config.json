@@ -1,4 +1,9 @@
 {
+	"od_storage": {
+		"add": "http://localhost/tagall_storage_dummy/add.php",
+		"retrieve": "http://localhost/tagall_storage_dummy/retrieve.php",
+		"delete": "http://localhost/tagall_storage_dummy/delete.php"
+	},
 	"namespaces": {
 		"GEO": "http://sws.geonames.org/",
 		"DBP": "http://dbpedia.org/resource/",

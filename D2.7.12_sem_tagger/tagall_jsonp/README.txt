@@ -2,20 +2,42 @@ Tagall jsonp:
 
 Uses jsonp protocol to run a semantic tagger, for details see: ../tagall/README.txt
 
-to run sources, install gem dependencies:
-sinatra >= 1.1.2 
-ruby-xslt >= 0.9.8
+Getting started:
+	Install ruby1.8
+	Install rubygems
+	Install apache 2 with php4 or higher
 
-run:
-# ruby -rubygems tagall.rb -p3000
+Install gem dependencies:
+	sinatra >= 1.1.2 
+	ruby-xslt >= 0.9.8
+	json >= 1.4.6
 
-to test open demo.html in your favourite browser
+Run:
+	# ruby -rubygems tagall.rb -p3000
+	(This will startup the backend application)
 
-IMPORTANT NOTE:
- this instance of the tagger is hard coded to communicate with the following python scripts via URL, possibly requests will be blocked:
-http://dynamic.opendatachallenge.kbresearch.nl/database/retrieve.py
-http://dynamic.opendatachallenge.kbresearch.nl/database/delete.py
-http://dynamic.opendatachallenge.kbresearch.nl/database/store.py
+To test, symlink the tagall_storage_dummy folder to your public htaccess folder:
+	# cd /var/www
+	# sudo ln -s /path/to/tagall_jsonp/tagall_storage_dummy
+
+And surf to:
+	http://localhost:3000/demo.html 
+  ... in your favourite browser
 
 Please set up your own storage mechanism and endpoint for continual use
-For an example see: https://github.com/STITCHplus/STITCHplus/tree/master/D2.7.12_sem_tagger/store_and_retrieve_example 
+For an example using mongodb see: 
+	https://github.com/STITCHplus/STITCHplus/tree/master/D2.7.12_sem_tagger/store_and_retrieve_example 
+
+To modify for different search endpoints, reference to the storage url, etc:
+ - edit config/config.json
+ - write new transformation XSLT-stylesheets (to convert open search responses to the proper json)
+ - write your own storage endpoint
+ - current xsl-stylesheets are located in:
+ https://github.com/STITCHplus/STITCHplus/tree/master/D2.7.12_sem_tagger/tagall_jsonp/public/stylesheets
+ - the generated javascripts used are in:
+	https://github.com/STITCHplus/STITCHplus/blob/master/D2.7.12_sem_tagger/tagall_jsonp/views/jsonp.erb 
+ - but the separate js objects are also (unused) in:
+ https://github.com/STITCHplus/STITCHplus/tree/master/D2.7.12_sem_tagger/tagall_jsonp/public/js
+ 
+ 
+ 
