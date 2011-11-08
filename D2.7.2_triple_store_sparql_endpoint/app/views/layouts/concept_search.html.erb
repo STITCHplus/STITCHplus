@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<%= javascript_include_tag "prototype" %>
+
+		<style type="text/css">
+			body {
+				font-family: sans;
+				font-size: 11px;
+			}
+			table {
+				font-size: 11px;
+			}
+			th {
+				text-align: left;
+			}
+			td {
+				vertical-align: top;
+			}
+			pre {
+				background-color: #ddd;
+				padding-left: 10px;
+				margin: 0;
+			}
+			img {
+				border: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="/concepts" method="get">
+			<label>Zoekterm</label>
+			<input name="q" type="text" />
+		</form>
+		<%= yield %>
+	</body>
+</html>

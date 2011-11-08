@@ -1,0 +1,22 @@
+<%= render :partial => "search_form" %>
+
+<% if @concepts && @concepts.length > 0 %>
+	<h1>Zoekresultaten</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Preflabel</th>
+				<th colspan="3">Identifier</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @concepts.each do |concept| %>
+				<tr class="<%= cycle('odd', 'even') %>">
+					<td><%= link_to "#{concept.label}", concepts_path(:uri => CGI.escape(concept.uri)) %></td>
+					<td><%= concept.uri %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+<% end %>
+

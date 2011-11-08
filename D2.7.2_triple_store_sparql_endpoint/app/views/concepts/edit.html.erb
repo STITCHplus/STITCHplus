@@ -1,0 +1,23 @@
+<%= render :partial => "search_form" %>
+<%= render :partial => "show_edit" %>
+
+<h1><%= @concept.label %></h1>
+
+<% form_tag replace_concept_path do %>
+	<%= hidden_field_tag "uri", @concept.uri %>
+	<table>
+		<tr>
+			<td><b>URI</b></td>
+			<td><%= CGI.unescape(@concept.uri) %></td>
+		</tr>
+		<% @concept.all_fields.each do |detail| %>
+			<tr>
+				<td><%= detail.keys.first %></td>
+				<td>
+					<input type="text" name="concept[<%= detail.keys.first %>][]" value="<%= detail[detail.keys.first] %>" />
+				</td>
+			</tr>
+		<% end %>
+	</table>
+	<%= submit_tag "Opslaan" %>
+<% end %>

@@ -1,0 +1,54 @@
+<%= render :partial => "search_form" %>
+<%= render :partial => "show_edit" %>
+
+
+<h1><%= @concept.label %></h1>
+
+<table>
+	<tr><td><b>URI</b></td><td><%= CGI.unescape(@concept.uri) %></td></tr>
+	<% @concept.details.each do |detail| %>
+		<tr>
+			<td><%= detail.keys.first %></td>
+			<td>
+				<% if detail[detail.keys.first] =~ /http:\/\// %>
+					<%= link_to detail[detail.keys.first], concepts_path(:uri => CGI.escape(detail[detail.keys.first])) %>
+				<% else %>
+					<%= detail[detail.keys.first] %>
+				<% end %>
+			</td>
+		</tr>
+	<% end %> 
+</table>
+
+
+
+<h2>Relaties</h2>
+<table>
+	<tr>
+		<th style="width: 300px">Broader</th>
+		<th style="width: 300px">Concept</th>
+		<th style="width: 300px">Narrower</th>
+		<th style="width: 300px">Related</th>
+	<tr>
+		<td>
+			<% @concept.broader.each do |related| %>
+				<%= link_to related.label, concepts_path(:uri => CGI.escape(related.uri)) %><br />
+			<% end %>
+		</td>
+		<td>
+			<%= @concept.label %><br />
+		</td>
+		<td>
+			<% @concept.narrower.each do |related| %>
+				<%= link_to related.label, concepts_path(:uri => CGI.escape(related.uri)) %><br />
+			<% end %>
+		</td>
+		<td>
+			<% @concept.related.each do |related| %>
+				<%= link_to related.label, concepts_path(:uri => CGI.escape(related.uri)) %><br />
+			<% end %>
+		</td>
+	</tr>
+</table>
+
+

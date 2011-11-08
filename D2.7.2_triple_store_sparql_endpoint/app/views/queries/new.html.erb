@@ -1,0 +1,43 @@
+<% content_for :head do %>
+	<script type="text/javascript">
+		function insert_text(el,ins) {
+    	if (el.setSelectionRange) {
+        el.value = el.value.substring(0,el.selectionStart) + ins + el.value.substring(el.selectionStart,el.selectionEnd) + el.value.substring(el.selectionEnd,el.value.length);
+  	  }
+	    else if (document.selection && document.selection.createRange) {
+        el.focus();
+        var range = document.selection.createRange();
+        range.text = ins + range.text;
+    	}
+		} 
+	</script>
+<% end %>
+
+<%= render :partial => "top_nav" %>
+<h1>Nieuwe Query</h1>
+
+<div style="float: right">
+<table>
+<tr><td style="vertical-align: top">
+<label>Prefix invoegen</label>
+<br /><a onclick="$('query_sparql_str').value = 'PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n' + $('query_sparql_str').value;" href="#">skos</a>
+<br /><a onclick="$('query_sparql_str').value = 'PREFIX datao: <http://datao.kb.nl/thesaurus/>\n' + $('query_sparql_str').value;" href="#">datao</a>
+<br /><a onclick="$('query_sparql_str').value = 'PREFIX dc: <http://purl.org/dc/elements/1.1/>\n' + $('query_sparql_str').value;" href="#">dc</a>
+<br /><a onclick="$('query_sparql_str').value = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n' + $('query_sparql_str').value;" href="#">rdf</a>
+</td><td style="vertical-align: top">
+<label>Shortcuts</label>
+<% ["skos:related", "skos:broader", "skos:narrower", "skos:prefLabel", "skos:inScheme"].each do |x| %>
+	<br /><%= link_to_function x, "insert_text($('query_sparql_str'), '#{x}')" %>
+<% end %>
+<br /><%= link_to_function "regex", "insert_text($('query_sparql_str'), 'FILTER regex(?your_var, \"your text\", \"i\")')" %>
+</td></tr></table>
+</div>
+
+<% form_for @query do |f| %>
+	<%= error_messages_for :query %>
+	<%= f.label :sparql_str, "SPARQL" %><br />
+	<%= f.text_area :sparql_str, :rows => 10, :cols => 100 %><br />
+	<%= hidden_field_tag :format, "xml" %>
+	<%= f.submit "Ok" %>
+<% end %>
+

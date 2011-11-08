@@ -1,0 +1,44 @@
+<%= render :partial => "top_nav" %>
+<h1>Custom queries</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Naam</th>
+			<th style="width: 450px">Query</th>
+			<th>Datum</th>
+			<th colspan="2">Resultaten</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @queries.each do |query| %>
+			<tr class="<%= cycle('odd', 'even') %>">
+				<td>
+					<span id="name_<%= query.id %>"><%= query.name || "[niet opgegeven] #{link_to_function image_tag("pencil.png"), "$('name_#{query.id}').hide(); $('name_input_#{query.id}').show()"}" %></span>
+					<span id="name_input_<%= query.id %>" style="display: none">
+						<% form_for query, :html => {:id => "form_#{query.id}"} do |f| %>
+							<%= f.text_field :name, :value => query.name, :style => "width: 150px", :onchange => "$('form_#{query.id}').submit()" %>
+						<% end %>
+					</span>
+				</td>
+				<td>
+					<%= link_to_function "Tonen", "$('qstr_#{query.id}').show(); $('link_#{query.id}').hide(); $('link2_#{query.id}').show();", :id => "link_#{query.id}" %>
+					<%= link_to_function "Verberg", "$('qstr_#{query.id}').hide(); $('link_#{query.id}').show(); $('link2_#{query.id}').hide();", :id => "link2_#{query.id}", :style => "display:none" %>
+					<%= link_to "Bewerken", new_query_path(:from_query => query.id) %>
+					<pre id="qstr_<%= query.id %>" style="display: none">
+						<%= h "\n" + query.sparql_str %>
+					</pre>
+				</td>
+				<td>
+					<%= I18n.l query.created_at %>
+				</td>
+				<td>
+					<%= link_to "Tonen", query_path(query.id) %>
+					(<%= link_to "xml", query_path(query.id, :format => :xml) %>)
+				</td>
+				<td>
+					<%= link_to "Verwijderen", query_path(query.id), :method => :delete, :confirm => "Weet u zeker dat u deze query en zijn resultaten wilt verwijderen?" %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

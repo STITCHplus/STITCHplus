@@ -1,0 +1,49 @@
+<%= render :partial => "top_nav" %>
+<% variables = [] %>
+<table>
+	<thead>
+		<tr>
+			<% (@results/"//variable").each do |v| %>
+				<th><%= v.attributes["name"] %></th>
+				<% variables << v.attributes["name"] %>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<% (@results/"/sparql/results/result").each do |result| %>
+			<tr>
+				<% variables.each do |variable| %>
+					<td>
+						<% binding =  (result/"binding").select{|b| b.attributes["name"] == variable}.first %>
+						<% if binding %>
+							<% ["uri", "literal", "bnode"].each do |tag| %>
+								<% if (elem = binding.get_elements_by_tag_name(tag)).length > 0 %>
+									<% if elem.first.innerText =~ /datao\.kb\.nl\/thesaurus\/[0-9]+/ %>
+										<%= link_to elem.first.innerText, concepts_path(:ppn => elem.first.innerText.gsub("http://datao.kb.nl/thesaurus/", "")) %>
+									<% elsif tag == "uri" %>
+										<%= link_to elem.first.innerText, elem.first.innerText %>
+									<% else %>
+										<%= elem.first.innerText %>
+									<% end %>
+								<% end %>
+							<% end %>
+						<% else %>
+							<%= "NULL" %>
+						<% end %>
+					</td>
+				<% end %>
+<% if false %>
+				<% (result/"binding").each do |binding| %>
+					<td>
+						<% if binding.children.first.innerText =~ /datao\.kb\.nl\/thesaurus\/[0-9]+/ %>
+							<%= link_to binding.children.first.innerText, concepts_path(:ppn => binding.children.first.innerText.gsub("http://datao.kb.nl/thesaurus/", "")) %>
+						<% else %>
+							<%= binding.children.first.innerText %>
+						<% end %>
+					</td>
+				<% end %>
+<% end %>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

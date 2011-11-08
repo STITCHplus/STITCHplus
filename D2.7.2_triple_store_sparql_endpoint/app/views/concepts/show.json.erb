@@ -1,0 +1,5 @@
+<% details = @concept.details %>
+<% details << {"skos:prefLabel" => @concept.label} %>
+[
+<%= details.map{|detail| %(\t{"#{detail.keys.first}":"#{detail[detail.keys.first].gsub('"', "'") unless detail[detail.keys.first].nil? }"})}.join(",\n") %>
+]

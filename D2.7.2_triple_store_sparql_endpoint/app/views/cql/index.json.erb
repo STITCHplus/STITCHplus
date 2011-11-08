@@ -1,0 +1,7 @@
+[
+<% if params[:use_quotes] %>
+	<%= "\t" + (@results/'//uri').map{|uri| "\"#{uri.innerText.gsub("http://datao.kb.nl/thesaurus/", "")}\""}.join(",\n\t") %>
+<% else %>	
+	<%= "\t" + (@results/'//uri').map{|uri| uri.innerText.gsub("http://datao.kb.nl/thesaurus/", "")}.join(",\n\t") %>
+<% end %>
+]

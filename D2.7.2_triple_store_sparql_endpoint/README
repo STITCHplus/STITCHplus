@@ -1,0 +1,7 @@
+Ruby on rails sparql endpoint for OWLIM triple store
+----
+
+gem dependencies:
+rails >= 2.3.2
+ruby-sesame
+ 

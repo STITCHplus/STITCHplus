@@ -1,0 +1,3 @@
+[
+<%= @concepts.map{|c| [c.uri, c.label]}.uniq.map{|uri, label| %(	{"ppn": "#{uri.gsub("http://datao.kb.nl/thesaurus/", "")}", "label": "#{label.gsub("'", "&quot;").gsub("\"", "&quot;")}"}) }.join(",\n") %>
+]
