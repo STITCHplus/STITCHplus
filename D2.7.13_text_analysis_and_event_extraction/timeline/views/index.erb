@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<style type="text/css">
+			body {
+				font-family: arial, sans;
+			}
+			img { border: 0}
+			#spinner {
+				display: none;
+			}
+			#slide_wrap {
+				display: none;
+			}
+			#back {
+				height: 20px;
+			}
+			#timeline {
+				height: 170px;
+			}
+			#highlight_slider {
+				line-height: 0px;
+				font-size: 0px;
+				clear: both; 
+				width: 450px; 
+				height: 10px;
+				background-color: #ddf;
+			}
+			#highlight_scroll {
+				line-height: 0px;
+				font-size: 0px;
+				height: 10px;
+				background-color: #aaf;
+				position: relative;
+			}
+			#highlight_drag {
+				cursor: pointer;
+				line-height: 0px;
+				font-size: 8px;
+				color: white;
+				text-align: center;
+				display: block;
+				width: 20px;
+				height: 10px;
+				background-color: blue;
+			}
+			.hist_bar {
+				background-color: blue;
+				float: left;
+				width: 5px;
+				line-height: 0px;
+				position: relative;
+				cursor: pointer;
+				margin: 0;
+				padding: 0;
+			}
+			.guide_year {
+				font-size: 10px;
+				position: relative;
+				top: 0;
+				float: left;
+			}
+			.highlight {
+				display: none;
+				position: relative;
+				width: 325px;
+				margin-top: 3px;
+				font-size: 10px;
+				background-color: #ddf;
+			}
+			.highlight em {
+				color: white;
+				background-color: blue;
+			}
+			#year_guide {
+				background-color: blue;
+				color: white;
+			}
+			#detail_view {
+				width: 800px;
+				overflow: hidden;
+			}
+			#month_bar tr td {
+				font-size: 12px;
+				border-right: 1px solid #aaa;
+				width: 120px;
+			}
+			#month_bar tr td a {
+				color: #aaa;
+				text-decoration: none;
+			}
+			#month_bar {
+				position: relative;
+				width: 1440px;
+			}
+			#month_bar_wrap {
+				width: 800px;
+				overflow: hidden;
+			}
+		</style>
+		<script type="text/javascript" src="js/prototype.js"></script>
+		<script type="text/javascript">
+			var baseQuery = "<%= @query %>";
+		</script>
+		<script type="text/javascript" src="js/timeline.js"></script>
+
+	</head>
+	<body>
+		<div id="timeline_wrap">
+			<div id="back">&nbsp;</div>
+			<div style="clear: both" id="timeline">
+			</div>
+
+			<div id="slide_wrap">
+				<div onmousedown="start_dragging_slider(event)" onmouseup="stop_dragging_slider()" onmousemove="drag_slider(event)" id="highlight_slider"></div>
+				<div id="month_bar_wrap">
+					<table id="month_bar">
+						<tr>	
+							<% month_names = ["Jan", "Feb", "Mrt", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"] %>
+							<% (0..11).each do |mon| %>
+								<td><a class="month_name" id="month_name_<%= mon + 1 %>" href="#" onclick="slide_to_month(<%= mon+1 %>)"><%= month_names[mon] %></a></td>
+							<% end %>
+						</tr>
+					</table>
+				</div>
+				<div id="detail_view">
+				</div>
+			</div>
+		</div>
+		<div id="spinner">
+			<img src="img/spinner.gif" />
+		</div>
+	</body>
+</html>
