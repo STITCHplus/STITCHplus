@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<style>th{ text-align: left}</style>
+	</head>
+	<body>
+		<form action="index" method="get">
+		<h1>Zoeken in links</h1>
+		<% if @errors.length > 0 %>
+			<div style="margin: 10px; border: solid 4px #a00; width: 400px; padding: 10px; background-color: #fdd">
+				<%= @errors.map{|e| "<li style='color:red'>#{e}</li>"} %>
+			</div>
+		<% end %>
+		<table>
+			<tr>
+				<th colspan="4">Aantal links</th>
+			</tr>
+			<tr>
+				<% [["Min:", "minlinks"], ["Max:", "maxlinks"]].each do |info| %>
+					<td><%= info[0] %></td>
+					<td>
+						<select name="<%= info[1] %>">
+							<%= (1..200).map{|n| %(<option value="#{n}">#{n}</option>) } %>
+						</select>
+					</td>
+				<% end %>
+			</tr>
+			<tr><th colspan="4">In sets</th></tr>
+			<tr>
+				<td colspan="4">
+					<% ["VIAF", "DNB", "DBPedia"].each_with_index do |info, i| %>
+						<input name="sets[]" value="<%= info %>" type="checkbox" checked />&nbsp;<%=info%>
+						<% if (i+1) % 3 == 0 %>
+							<br />
+						<% end %>
+					<% end %>
+				</td>
+			</tr>
+		</table>
+		<input type="submit" value="Zoeken" />
+		</form>
+	</body>
+</html>

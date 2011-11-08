@@ -1,0 +1,17 @@
+<html>
+	<head><style>th{text-align:left}td.cr{text-align: center}</style></head>
+	<body>
+		<h1>Zoekresultaten</h1>
+		<table>
+			<tr><th>ID</th><th><%= params["sets"].join("</th><th>") %></th></tr>
+			<% @cursor.each do |doc| %>
+				<tr>
+					<td><a href="/general/lod/get/<%= doc["_id"] %>.html"><%= doc["_id"] %></a></td>
+					<td class="cr"><%= params["sets"].map{|set| (doc["sameAs"][set] ? doc["sameAs"][set].length : 0) }.join("</td><td class='cr'>") %> </td>
+				</tr>
+			<% end %>
+		</table>
+
+		<a href="index?<%= params.reject{|k, v| k == "offset"}.map{|k, v| (v.is_a?(Array) ? v.map{|av| "#{k}[]=#{av}"}.join("&") : "#{k.to_s}=#{v}")}.join("&") + "&offset=#{(params[:offset] || "0").to_i + 25}" %>">&gt;&gt;</a>
+	</body>
+</html>

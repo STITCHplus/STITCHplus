@@ -1,0 +1,19 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<a target="_blank" href="http://datao.kb.nl/thesaurus/<%= @doc["_id"] %>"><%= @doc["_id"] %></a>
+		<% @doc["sameAs"].each do |set, links| %>
+			<h2><%= set %></h2>
+			<table><tr><th>Score</th><th>link</th>
+				<% links.sort{|a, b| b["score"] <=> a["score"]}.each_with_index do |link, i| %>
+					<% break if i == (@limit == 0 ? links.length : @limit) %>
+					<tr>
+						<td><%= link["score"] %></td>
+						<td><a target="_blank" href="<%= link["id"] %>"><%= link["id"] %></a></td>
+					</tr>
+				<% end %>
+			</table>
+		<% end %>
+	</body>
+</html>
