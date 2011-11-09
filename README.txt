@@ -1,4 +1,4 @@
-==
+===
 
 Here are some of the deliverables for the STITCHplus project.
 The project involves using linkeddata to enhance research capablities.
@@ -15,6 +15,6 @@ http://www.catchplus.nl/diensten/deelprojecten/stitchplus/
 If you have questions regarding the software in this repository, 
 please contact either Rene.vanderArk or WillemJan.Faber at kb.nl.
 
-==
+===
 
 
